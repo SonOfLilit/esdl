@@ -1,0 +1,3176 @@
+<HTML><HEAD><TITLE>gl</TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<H3>Header File</H3>
+The header file may include additional information <a href="../include/gl.hrl">gl.hrl</a>
+<H3>Exports</H3>
+<p><A NAME="accum">
+<strong> accum(Op, Value)  </strong><UL>Args: Op, Value<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glAccum.html">C-API:</a> void glAccum(GLenum op, GLfloat value)<br>
+</UL>
+<p><A NAME="alphaFunc">
+<strong> alphaFunc(Func, Ref)  </strong><UL>Args: Func, Ref<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glAlphaFunc.html">C-API:</a> void glAlphaFunc(GLenum func, GLclampf ref)<br>
+</UL>
+<p><A NAME="areTexturesResident">
+<strong> areTexturesResident(N, Textures)  </strong><UL>Args: N, <<[Textures]>><br>
+Returns: {?GL_BYTE, [Residences]}<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glAreTexturesResident.html">C-API:</a> GLboolean glAreTexturesResident(GLsizei n,  const GLuint * textures, GLboolean * residences)<br>
+</UL>
+<p><A NAME="arrayElement">
+<strong> arrayElement(I)  </strong><UL>Args: I<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glArrayElement.html">C-API:</a> void glArrayElement(GLint i)<br>
+</UL>
+<p><A NAME="'begin'">
+<strong> 'begin'(Mode)  </strong><UL>Args: Mode<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glBegin.html">C-API:</a> void glBegin(GLenum mode)<br>
+</UL>
+<p><A NAME="bindTexture">
+<strong> bindTexture(Target, Texture)  </strong><UL>Args: Target, Texture<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glBindTexture.html">C-API:</a> void glBindTexture(GLenum target, GLuint texture)<br>
+</UL>
+<p><A NAME="bitmap">
+<strong> bitmap(Width, Height, Xorig, Yorig, Xmove, Ymove, Bitmap)  </strong><UL>Args: Width, Height, Xorig, Yorig, Xmove, Ymove, <<[Bitmap]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glBitmap.html">C-API:</a> void glBitmap(GLsizei width, GLsizei height, GLfloat xorig, GLfloat yorig, GLfloat xmove, GLfloat ymove,  const GLubyte * bitmap)<br>
+</UL>
+<p><A NAME="blendFunc">
+<strong> blendFunc(Sfactor, Dfactor)  </strong><UL>Args: Sfactor, Dfactor<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glBlendFunc.html">C-API:</a> void glBlendFunc(GLenum sfactor, GLenum dfactor)<br>
+</UL>
+<p><A NAME="callList">
+<strong> callList(List)  </strong><UL>Args: List<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glCallList.html">C-API:</a> void glCallList(GLuint list)<br>
+</UL>
+<p><A NAME="callLists">
+<strong> callLists(N, Type, Lists)  </strong><UL>Args: N, Type, <<[Lists]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glCallLists.html">C-API:</a> void glCallLists(GLsizei n, GLenum type,  const GLvoid * lists)<br>
+</UL>
+<p><A NAME="clear">
+<strong> clear(Mask)  </strong><UL>Args: Mask<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glClear.html">C-API:</a> void glClear(GLbitfield mask)<br>
+</UL>
+<p><A NAME="clearAccum">
+<strong> clearAccum(Red, Green, Blue, Alpha)  </strong><UL>Args: Red, Green, Blue, Alpha<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glClearAccum.html">C-API:</a> void glClearAccum(GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha)<br>
+</UL>
+<p><A NAME="clearColor">
+<strong> clearColor(Red, Green, Blue, Alpha)  </strong><UL>Args: Red, Green, Blue, Alpha<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glClearColor.html">C-API:</a> void glClearColor(GLclampf red, GLclampf green, GLclampf blue, GLclampf alpha)<br>
+</UL>
+<p><A NAME="clearDepth">
+<strong> clearDepth(Depth)  </strong><UL>Args: Depth<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glClearDepth.html">C-API:</a> void glClearDepth(GLclampd depth)<br>
+</UL>
+<p><A NAME="clearIndex">
+<strong> clearIndex(C)  </strong><UL>Args: C<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glClearIndex.html">C-API:</a> void glClearIndex(GLfloat c)<br>
+</UL>
+<p><A NAME="clearStencil">
+<strong> clearStencil(S)  </strong><UL>Args: S<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glClearStencil.html">C-API:</a> void glClearStencil(GLint s)<br>
+</UL>
+<p><A NAME="clipPlane">
+<strong> clipPlane(Plane, Equation)  </strong><UL>Args: Plane, <<[Equation]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glClipPlane.html">C-API:</a> void glClipPlane(GLenum plane,  const GLdouble * equation)<br>
+</UL>
+<p><A NAME="color3b">
+<strong> color3b(Red, Green, Blue)  </strong><UL>Args: Red, Green, Blue<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColor.html">C-API:</a> void glColor3b(GLbyte red, GLbyte green, GLbyte blue)<br>
+</UL>
+<p><A NAME="color3bv">
+<strong> color3bv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColor.html">C-API:</a> void glColor3bv( const GLbyte * v)<br>
+</UL>
+<p><A NAME="color3d">
+<strong> color3d(Red, Green, Blue)  </strong><UL>Args: Red, Green, Blue<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColor.html">C-API:</a> void glColor3d(GLdouble red, GLdouble green, GLdouble blue)<br>
+</UL>
+<p><A NAME="color3dv">
+<strong> color3dv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColor.html">C-API:</a> void glColor3dv( const GLdouble * v)<br>
+</UL>
+<p><A NAME="color3f">
+<strong> color3f(Red, Green, Blue)  </strong><UL>Args: Red, Green, Blue<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColor.html">C-API:</a> void glColor3f(GLfloat red, GLfloat green, GLfloat blue)<br>
+</UL>
+<p><A NAME="color3fv">
+<strong> color3fv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColor.html">C-API:</a> void glColor3fv( const GLfloat * v)<br>
+</UL>
+<p><A NAME="color3i">
+<strong> color3i(Red, Green, Blue)  </strong><UL>Args: Red, Green, Blue<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColor.html">C-API:</a> void glColor3i(GLint red, GLint green, GLint blue)<br>
+</UL>
+<p><A NAME="color3iv">
+<strong> color3iv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColor.html">C-API:</a> void glColor3iv( const GLint * v)<br>
+</UL>
+<p><A NAME="color3s">
+<strong> color3s(Red, Green, Blue)  </strong><UL>Args: Red, Green, Blue<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColor.html">C-API:</a> void glColor3s(GLshort red, GLshort green, GLshort blue)<br>
+</UL>
+<p><A NAME="color3sv">
+<strong> color3sv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColor.html">C-API:</a> void glColor3sv( const GLshort * v)<br>
+</UL>
+<p><A NAME="color3ub">
+<strong> color3ub(Red, Green, Blue)  </strong><UL>Args: Red, Green, Blue<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColor.html">C-API:</a> void glColor3ub(GLubyte red, GLubyte green, GLubyte blue)<br>
+</UL>
+<p><A NAME="color3ubv">
+<strong> color3ubv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColor.html">C-API:</a> void glColor3ubv( const GLubyte * v)<br>
+</UL>
+<p><A NAME="color3ui">
+<strong> color3ui(Red, Green, Blue)  </strong><UL>Args: Red, Green, Blue<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColor.html">C-API:</a> void glColor3ui(GLuint red, GLuint green, GLuint blue)<br>
+</UL>
+<p><A NAME="color3uiv">
+<strong> color3uiv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColor.html">C-API:</a> void glColor3uiv( const GLuint * v)<br>
+</UL>
+<p><A NAME="color3us">
+<strong> color3us(Red, Green, Blue)  </strong><UL>Args: Red, Green, Blue<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColor.html">C-API:</a> void glColor3us(GLushort red, GLushort green, GLushort blue)<br>
+</UL>
+<p><A NAME="color3usv">
+<strong> color3usv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColor.html">C-API:</a> void glColor3usv( const GLushort * v)<br>
+</UL>
+<p><A NAME="color4b">
+<strong> color4b(Red, Green, Blue, Alpha)  </strong><UL>Args: Red, Green, Blue, Alpha<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColor.html">C-API:</a> void glColor4b(GLbyte red, GLbyte green, GLbyte blue, GLbyte alpha)<br>
+</UL>
+<p><A NAME="color4bv">
+<strong> color4bv({V1,V2,V3,V4})  </strong><UL>Args: {V1,V2,V3,V4}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColor.html">C-API:</a> void glColor4bv( const GLbyte * v)<br>
+</UL>
+<p><A NAME="color4d">
+<strong> color4d(Red, Green, Blue, Alpha)  </strong><UL>Args: Red, Green, Blue, Alpha<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColor.html">C-API:</a> void glColor4d(GLdouble red, GLdouble green, GLdouble blue, GLdouble alpha)<br>
+</UL>
+<p><A NAME="color4dv">
+<strong> color4dv({V1,V2,V3,V4})  </strong><UL>Args: {V1,V2,V3,V4}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColor.html">C-API:</a> void glColor4dv( const GLdouble * v)<br>
+</UL>
+<p><A NAME="color4f">
+<strong> color4f(Red, Green, Blue, Alpha)  </strong><UL>Args: Red, Green, Blue, Alpha<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColor.html">C-API:</a> void glColor4f(GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha)<br>
+</UL>
+<p><A NAME="color4fv">
+<strong> color4fv({V1,V2,V3,V4})  </strong><UL>Args: {V1,V2,V3,V4}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColor.html">C-API:</a> void glColor4fv( const GLfloat * v)<br>
+</UL>
+<p><A NAME="color4i">
+<strong> color4i(Red, Green, Blue, Alpha)  </strong><UL>Args: Red, Green, Blue, Alpha<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColor.html">C-API:</a> void glColor4i(GLint red, GLint green, GLint blue, GLint alpha)<br>
+</UL>
+<p><A NAME="color4iv">
+<strong> color4iv({V1,V2,V3,V4})  </strong><UL>Args: {V1,V2,V3,V4}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColor.html">C-API:</a> void glColor4iv( const GLint * v)<br>
+</UL>
+<p><A NAME="color4s">
+<strong> color4s(Red, Green, Blue, Alpha)  </strong><UL>Args: Red, Green, Blue, Alpha<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColor.html">C-API:</a> void glColor4s(GLshort red, GLshort green, GLshort blue, GLshort alpha)<br>
+</UL>
+<p><A NAME="color4sv">
+<strong> color4sv({V1,V2,V3,V4})  </strong><UL>Args: {V1,V2,V3,V4}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColor.html">C-API:</a> void glColor4sv( const GLshort * v)<br>
+</UL>
+<p><A NAME="color4ub">
+<strong> color4ub(Red, Green, Blue, Alpha)  </strong><UL>Args: Red, Green, Blue, Alpha<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColor.html">C-API:</a> void glColor4ub(GLubyte red, GLubyte green, GLubyte blue, GLubyte alpha)<br>
+</UL>
+<p><A NAME="color4ubv">
+<strong> color4ubv({V1,V2,V3,V4})  </strong><UL>Args: {V1,V2,V3,V4}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColor.html">C-API:</a> void glColor4ubv( const GLubyte * v)<br>
+</UL>
+<p><A NAME="color4ui">
+<strong> color4ui(Red, Green, Blue, Alpha)  </strong><UL>Args: Red, Green, Blue, Alpha<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColor.html">C-API:</a> void glColor4ui(GLuint red, GLuint green, GLuint blue, GLuint alpha)<br>
+</UL>
+<p><A NAME="color4uiv">
+<strong> color4uiv({V1,V2,V3,V4})  </strong><UL>Args: {V1,V2,V3,V4}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColor.html">C-API:</a> void glColor4uiv( const GLuint * v)<br>
+</UL>
+<p><A NAME="color4us">
+<strong> color4us(Red, Green, Blue, Alpha)  </strong><UL>Args: Red, Green, Blue, Alpha<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColor.html">C-API:</a> void glColor4us(GLushort red, GLushort green, GLushort blue, GLushort alpha)<br>
+</UL>
+<p><A NAME="color4usv">
+<strong> color4usv({V1,V2,V3,V4})  </strong><UL>Args: {V1,V2,V3,V4}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColor.html">C-API:</a> void glColor4usv( const GLushort * v)<br>
+</UL>
+<p><A NAME="colorMask">
+<strong> colorMask(Red, Green, Blue, Alpha)  </strong><UL>Args: Red, Green, Blue, Alpha<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColorMask.html">C-API:</a> void glColorMask(GLboolean red, GLboolean green, GLboolean blue, GLboolean alpha)<br>
+</UL>
+<p><A NAME="colorMaterial">
+<strong> colorMaterial(Face, Mode)  </strong><UL>Args: Face, Mode<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColorMaterial.html">C-API:</a> void glColorMaterial(GLenum face, GLenum mode)<br>
+</UL>
+<p><A NAME="colorPointer">
+<strong> colorPointer(Size, Type, Stride, Pointer)  </strong><UL>Args: Size, Type, Stride, <<[Pointer]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColorPointer.html">C-API:</a> void glColorPointer(GLint size, GLenum type, GLsizei stride,  const GLvoid * pointer)<br>
+</UL>
+<p><A NAME="copyPixels">
+<strong> copyPixels(X, Y, Width, Height, Type)  </strong><UL>Args: X, Y, Width, Height, Type<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glCopyPixels.html">C-API:</a> void glCopyPixels(GLint x, GLint y, GLsizei width, GLsizei height, GLenum type)<br>
+</UL>
+<p><A NAME="copyTexImage1D">
+<strong> copyTexImage1D(Target, Level, Internalformat, X, Y, Width, Border)  </strong><UL>Args: Target, Level, Internalformat, X, Y, Width, Border<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glCopyTexImage1D.html">C-API:</a> void glCopyTexImage1D(GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLint border)<br>
+</UL>
+<p><A NAME="copyTexImage2D">
+<strong> copyTexImage2D(Target, Level, Internalformat, X, Y, Width, Height, Border)  </strong><UL>Args: Target, Level, Internalformat, X, Y, Width, Height, Border<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glCopyTexImage2D.html">C-API:</a> void glCopyTexImage2D(GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLsizei height, GLint border)<br>
+</UL>
+<p><A NAME="copyTexSubImage1D">
+<strong> copyTexSubImage1D(Target, Level, Xoffset, X, Y, Width)  </strong><UL>Args: Target, Level, Xoffset, X, Y, Width<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glCopyTexSubImage1D.html">C-API:</a> void glCopyTexSubImage1D(GLenum target, GLint level, GLint xoffset, GLint x, GLint y, GLsizei width)<br>
+</UL>
+<p><A NAME="copyTexSubImage2D">
+<strong> copyTexSubImage2D(Target, Level, Xoffset, Yoffset, X, Y, Width, Height)  </strong><UL>Args: Target, Level, Xoffset, Yoffset, X, Y, Width, Height<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glCopyTexSubImage2D.html">C-API:</a> void glCopyTexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint x, GLint y, GLsizei width, GLsizei height)<br>
+</UL>
+<p><A NAME="cullFace">
+<strong> cullFace(Mode)  </strong><UL>Args: Mode<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glCullFace.html">C-API:</a> void glCullFace(GLenum mode)<br>
+</UL>
+<p><A NAME="deleteLists">
+<strong> deleteLists(List, Range)  </strong><UL>Args: List, Range<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glDeleteLists.html">C-API:</a> void glDeleteLists(GLuint list, GLsizei range)<br>
+</UL>
+<p><A NAME="deleteTextures">
+<strong> deleteTextures(N, Textures)  </strong><UL>Args: N, <<[Textures]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glDeleteTextures.html">C-API:</a> void glDeleteTextures(GLsizei n,  const GLuint * textures)<br>
+</UL>
+<p><A NAME="depthFunc">
+<strong> depthFunc(Func)  </strong><UL>Args: Func<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glDepthFunc.html">C-API:</a> void glDepthFunc(GLenum func)<br>
+</UL>
+<p><A NAME="depthMask">
+<strong> depthMask(Flag)  </strong><UL>Args: Flag<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glDepthMask.html">C-API:</a> void glDepthMask(GLboolean flag)<br>
+</UL>
+<p><A NAME="depthRange">
+<strong> depthRange(ZNear, ZFar)  </strong><UL>Args: ZNear, ZFar<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glDepthRange.html">C-API:</a> void glDepthRange(GLclampd zNear, GLclampd zFar)<br>
+</UL>
+<p><A NAME="disable">
+<strong> disable(Cap)  </strong><UL>Args: Cap<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glDisable.html">C-API:</a> void glDisable(GLenum cap)<br>
+</UL>
+<p><A NAME="disableClientState">
+<strong> disableClientState(Array)  </strong><UL>Args: Array<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glDisableClientState.html">C-API:</a> void glDisableClientState(GLenum array)<br>
+</UL>
+<p><A NAME="drawArrays">
+<strong> drawArrays(Mode, First, Count)  </strong><UL>Args: Mode, First, Count<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glDrawArrays.html">C-API:</a> void glDrawArrays(GLenum mode, GLint first, GLsizei count)<br>
+</UL>
+<p><A NAME="drawBuffer">
+<strong> drawBuffer(Mode)  </strong><UL>Args: Mode<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glDrawBuffer.html">C-API:</a> void glDrawBuffer(GLenum mode)<br>
+</UL>
+<p><A NAME="drawElements">
+<strong> drawElements(Mode, Count, Type, Indices)  </strong><UL>Args: Mode, Count, Type, <<[Indices]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glDrawElements.html">C-API:</a> void glDrawElements(GLenum mode, GLsizei count, GLenum type,  const GLvoid * indices)<br>
+</UL>
+<p><A NAME="drawPixels">
+<strong> drawPixels(Width, Height, Format, Type, Pixels)  </strong><UL>Args: Width, Height, Format, Type, <<[Pixels]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glDrawPixels.html">C-API:</a> void glDrawPixels(GLsizei width, GLsizei height, GLenum format, GLenum type,  const GLvoid * pixels)<br>
+</UL>
+<p><A NAME="edgeFlag">
+<strong> edgeFlag(Flag)  </strong><UL>Args: Flag<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glEdgeFlag.html">C-API:</a> void glEdgeFlag(GLboolean flag)<br>
+</UL>
+<p><A NAME="edgeFlagPointer">
+<strong> edgeFlagPointer(Stride, Pointer)  </strong><UL>Args: Stride, <<[Pointer]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glEdgeFlagPointer.html">C-API:</a> void glEdgeFlagPointer(GLsizei stride,  const GLboolean * pointer)<br>
+</UL>
+<p><A NAME="edgeFlagv">
+<strong> edgeFlagv(Flag)  </strong><UL>Args: <<[Flag]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glEdgeFlagv.html">C-API:</a> void glEdgeFlagv( const GLboolean * flag)<br>
+</UL>
+<p><A NAME="enable">
+<strong> enable(Cap)  </strong><UL>Args: Cap<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glEnable.html">C-API:</a> void glEnable(GLenum cap)<br>
+</UL>
+<p><A NAME="enableClientState">
+<strong> enableClientState(Array)  </strong><UL>Args: Array<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glEnableClientState.html">C-API:</a> void glEnableClientState(GLenum array)<br>
+</UL>
+<p><A NAME="'end'">
+<strong> 'end'()  </strong><UL>Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glEnd.html">C-API:</a> void glEnd()<br>
+</UL>
+<p><A NAME="endList">
+<strong> endList()  </strong><UL>Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glEndList.html">C-API:</a> void glEndList()<br>
+</UL>
+<p><A NAME="evalCoord1d">
+<strong> evalCoord1d(U)  </strong><UL>Args: U<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glEvalCoord.html">C-API:</a> void glEvalCoord1d(GLdouble u)<br>
+</UL>
+<p><A NAME="evalCoord1dv">
+<strong> evalCoord1dv({U1})  </strong><UL>Args: {U1}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glEvalCoord.html">C-API:</a> void glEvalCoord1dv( const GLdouble * u)<br>
+</UL>
+<p><A NAME="evalCoord1f">
+<strong> evalCoord1f(U)  </strong><UL>Args: U<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glEvalCoord.html">C-API:</a> void glEvalCoord1f(GLfloat u)<br>
+</UL>
+<p><A NAME="evalCoord1fv">
+<strong> evalCoord1fv({U1})  </strong><UL>Args: {U1}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glEvalCoord.html">C-API:</a> void glEvalCoord1fv( const GLfloat * u)<br>
+</UL>
+<p><A NAME="evalCoord2d">
+<strong> evalCoord2d(U, V)  </strong><UL>Args: U, V<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glEvalCoord.html">C-API:</a> void glEvalCoord2d(GLdouble u, GLdouble v)<br>
+</UL>
+<p><A NAME="evalCoord2dv">
+<strong> evalCoord2dv({U1,U2})  </strong><UL>Args: {U1,U2}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glEvalCoord.html">C-API:</a> void glEvalCoord2dv( const GLdouble * u)<br>
+</UL>
+<p><A NAME="evalCoord2f">
+<strong> evalCoord2f(U, V)  </strong><UL>Args: U, V<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glEvalCoord.html">C-API:</a> void glEvalCoord2f(GLfloat u, GLfloat v)<br>
+</UL>
+<p><A NAME="evalCoord2fv">
+<strong> evalCoord2fv({U1,U2})  </strong><UL>Args: {U1,U2}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glEvalCoord.html">C-API:</a> void glEvalCoord2fv( const GLfloat * u)<br>
+</UL>
+<p><A NAME="evalMesh1">
+<strong> evalMesh1(Mode, I1, I2)  </strong><UL>Args: Mode, I1, I2<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glEvalMesh1.html">C-API:</a> void glEvalMesh1(GLenum mode, GLint i1, GLint i2)<br>
+</UL>
+<p><A NAME="evalMesh2">
+<strong> evalMesh2(Mode, I1, I2, J1, J2)  </strong><UL>Args: Mode, I1, I2, J1, J2<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glEvalMesh2.html">C-API:</a> void glEvalMesh2(GLenum mode, GLint i1, GLint i2, GLint j1, GLint j2)<br>
+</UL>
+<p><A NAME="evalPoint1">
+<strong> evalPoint1(I)  </strong><UL>Args: I<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glEvalPoint1.html">C-API:</a> void glEvalPoint1(GLint i)<br>
+</UL>
+<p><A NAME="evalPoint2">
+<strong> evalPoint2(I, J)  </strong><UL>Args: I, J<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glEvalPoint2.html">C-API:</a> void glEvalPoint2(GLint i, GLint j)<br>
+</UL>
+<p><A NAME="feedbackBuffer">
+<strong> feedbackBuffer(Size, Type, #sdlmem{bin=Buffer})  </strong><UL>Args: Size, Type, #sdlmem{} = Buffer<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glFeedbackBuffer.html">C-API:</a> void glFeedbackBuffer(GLsizei size, GLenum type, GLfloat * buffer)<br>
+</UL>
+<p><A NAME="finish">
+<strong> finish()  </strong><UL>Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glFinish.html">C-API:</a> void glFinish()<br>
+</UL>
+<p><A NAME="flush">
+<strong> flush()  </strong><UL>Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glFlush.html">C-API:</a> void glFlush()<br>
+</UL>
+<p><A NAME="fogf">
+<strong> fogf(Pname, Param)  </strong><UL>Args: Pname, Param<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glFogf.html">C-API:</a> void glFogf(GLenum pname, GLfloat param)<br>
+</UL>
+<p><A NAME="fogfv">
+<strong> fogfv(Pname, Params)  </strong><UL>Args: Pname, <<[Params]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glFog.html">C-API:</a> void glFogfv(GLenum pname,  const GLfloat * params)<br>
+</UL>
+<p><A NAME="fogi">
+<strong> fogi(Pname, Param)  </strong><UL>Args: Pname, Param<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glFogi.html">C-API:</a> void glFogi(GLenum pname, GLint param)<br>
+</UL>
+<p><A NAME="fogiv">
+<strong> fogiv(Pname, Params)  </strong><UL>Args: Pname, <<[Params]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glFog.html">C-API:</a> void glFogiv(GLenum pname,  const GLint * params)<br>
+</UL>
+<p><A NAME="frontFace">
+<strong> frontFace(Mode)  </strong><UL>Args: Mode<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glFrontFace.html">C-API:</a> void glFrontFace(GLenum mode)<br>
+</UL>
+<p><A NAME="frustum">
+<strong> frustum(Left, Right, Bottom, Top, ZNear, ZFar)  </strong><UL>Args: Left, Right, Bottom, Top, ZNear, ZFar<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glFrustum.html">C-API:</a> void glFrustum(GLdouble left, GLdouble right, GLdouble bottom, GLdouble top, GLdouble zNear, GLdouble zFar)<br>
+</UL>
+<p><A NAME="genLists">
+<strong> genLists(Range)  </strong><UL>Args: Range<br>
+Returns: ?GL_UNSIGNED_INT<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGenLists.html">C-API:</a> GLuint glGenLists(GLsizei range)<br>
+</UL>
+<p><A NAME="genTextures">
+<strong> genTextures(N)  </strong><UL>Args: N<br>
+Returns: [Textures]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGenTextures.html">C-API:</a> void glGenTextures(GLsizei n, GLuint * textures)<br>
+</UL>
+<p><A NAME="getBooleanv">
+<strong> getBooleanv(Pname)  </strong><UL>Args: Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetBooleanv.html">C-API:</a> void glGetBooleanv(GLenum pname, GLboolean * params)<br>
+</UL>
+<p><A NAME="getClipPlane">
+<strong> getClipPlane(Plane)  </strong><UL>Args: Plane<br>
+Returns: [Equation]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetClipPlane.html">C-API:</a> void glGetClipPlane(GLenum plane, GLdouble * equation)<br>
+</UL>
+<p><A NAME="getDoublev">
+<strong> getDoublev(Pname)  </strong><UL>Args: Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetDoublev.html">C-API:</a> void glGetDoublev(GLenum pname, GLdouble * params)<br>
+</UL>
+<p><A NAME="getError">
+<strong> getError()  </strong><UL>Returns: ?GL_INT<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetError.html">C-API:</a> GLenum glGetError()<br>
+</UL>
+<p><A NAME="getFloatv">
+<strong> getFloatv(Pname)  </strong><UL>Args: Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetFloatv.html">C-API:</a> void glGetFloatv(GLenum pname, GLfloat * params)<br>
+</UL>
+<p><A NAME="getIntegerv">
+<strong> getIntegerv(Pname)  </strong><UL>Args: Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetIntegerv.html">C-API:</a> void glGetIntegerv(GLenum pname, GLint * params)<br>
+</UL>
+<p><A NAME="getLightfv">
+<strong> getLightfv(Light, Pname)  </strong><UL>Args: Light, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetLight.html">C-API:</a> void glGetLightfv(GLenum light, GLenum pname, GLfloat * params)<br>
+</UL>
+<p><A NAME="getLightiv">
+<strong> getLightiv(Light, Pname)  </strong><UL>Args: Light, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetLight.html">C-API:</a> void glGetLightiv(GLenum light, GLenum pname, GLint * params)<br>
+</UL>
+<p><A NAME="getMapdv">
+<strong> getMapdv(Target, Query, #sdlmem{bin=V})  </strong><UL>Args: Target, Query, #sdlmem{} = V<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetMap.html">C-API:</a> void glGetMapdv(GLenum target, GLenum query, GLdouble * v)<br>
+</UL>
+<p><A NAME="getMapfv">
+<strong> getMapfv(Target, Query, #sdlmem{bin=V})  </strong><UL>Args: Target, Query, #sdlmem{} = V<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetMap.html">C-API:</a> void glGetMapfv(GLenum target, GLenum query, GLfloat * v)<br>
+</UL>
+<p><A NAME="getMapiv">
+<strong> getMapiv(Target, Query, #sdlmem{bin=V})  </strong><UL>Args: Target, Query, #sdlmem{} = V<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetMap.html">C-API:</a> void glGetMapiv(GLenum target, GLenum query, GLint * v)<br>
+</UL>
+<p><A NAME="getMaterialfv">
+<strong> getMaterialfv(Face, Pname)  </strong><UL>Args: Face, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetMaterial.html">C-API:</a> void glGetMaterialfv(GLenum face, GLenum pname, GLfloat * params)<br>
+</UL>
+<p><A NAME="getMaterialiv">
+<strong> getMaterialiv(Face, Pname)  </strong><UL>Args: Face, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetMaterial.html">C-API:</a> void glGetMaterialiv(GLenum face, GLenum pname, GLint * params)<br>
+</UL>
+<p><A NAME="getPixelMapfv">
+<strong> getPixelMapfv(Map, #sdlmem{bin=Values})  </strong><UL>Args: Map, #sdlmem{} = Values<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetPixelMap.html">C-API:</a> void glGetPixelMapfv(GLenum map, GLfloat * values)<br>
+</UL>
+<p><A NAME="getPixelMapuiv">
+<strong> getPixelMapuiv(Map, #sdlmem{bin=Values})  </strong><UL>Args: Map, #sdlmem{} = Values<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetPixelMapu.html">C-API:</a> void glGetPixelMapuiv(GLenum map, GLuint * values)<br>
+</UL>
+<p><A NAME="getPixelMapusv">
+<strong> getPixelMapusv(Map, #sdlmem{bin=Values})  </strong><UL>Args: Map, #sdlmem{} = Values<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetPixelMapu.html">C-API:</a> void glGetPixelMapusv(GLenum map, GLushort * values)<br>
+</UL>
+<p><A NAME="getPointerv">
+<strong> getPointerv(Pname)  </strong><UL>Args: Pname<br>
+Returns: Params=#sdlmem{}<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetPointerv.html">C-API:</a> void glGetPointerv(GLenum pname,  GLvoid* *params)<br>
+</UL>
+<p><A NAME="getPolygonStipple">
+<strong> getPolygonStipple()  </strong><UL>Returns: [Mask]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetPolygonStipple.html">C-API:</a> void glGetPolygonStipple(GLubyte * mask)<br>
+</UL>
+<p><A NAME="getString">
+<strong> getString(Name)  </strong><UL>Args: Name<br>
+Returns: [?GL_UNSIGNED_BYTE]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetString.html">C-API:</a> GLubyte* glGetString(GLenum name)<br>
+</UL>
+<p><A NAME="getTexEnvfv">
+<strong> getTexEnvfv(Target, Pname)  </strong><UL>Args: Target, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetTexEnv.html">C-API:</a> void glGetTexEnvfv(GLenum target, GLenum pname, GLfloat * params)<br>
+</UL>
+<p><A NAME="getTexEnviv">
+<strong> getTexEnviv(Target, Pname)  </strong><UL>Args: Target, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetTexEnv.html">C-API:</a> void glGetTexEnviv(GLenum target, GLenum pname, GLint * params)<br>
+</UL>
+<p><A NAME="getTexGendv">
+<strong> getTexGendv(Coord, Pname)  </strong><UL>Args: Coord, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetTexGen.html">C-API:</a> void glGetTexGendv(GLenum coord, GLenum pname, GLdouble * params)<br>
+</UL>
+<p><A NAME="getTexGenfv">
+<strong> getTexGenfv(Coord, Pname)  </strong><UL>Args: Coord, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetTexGen.html">C-API:</a> void glGetTexGenfv(GLenum coord, GLenum pname, GLfloat * params)<br>
+</UL>
+<p><A NAME="getTexGeniv">
+<strong> getTexGeniv(Coord, Pname)  </strong><UL>Args: Coord, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetTexGen.html">C-API:</a> void glGetTexGeniv(GLenum coord, GLenum pname, GLint * params)<br>
+</UL>
+<p><A NAME="getTexImage">
+<strong> getTexImage(Target, Level, Format, Type, #sdlmem{bin=Pixels})  </strong><UL>Args: Target, Level, Format, Type, #sdlmem{} = Pixels<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetTexImage.html">C-API:</a> void glGetTexImage(GLenum target, GLint level, GLenum format, GLenum type, GLvoid * pixels)<br>
+</UL>
+<p><A NAME="getTexLevelParameterfv">
+<strong> getTexLevelParameterfv(Target, Level, Pname)  </strong><UL>Args: Target, Level, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetTexLevelParameter.html">C-API:</a> void glGetTexLevelParameterfv(GLenum target, GLint level, GLenum pname, GLfloat * params)<br>
+</UL>
+<p><A NAME="getTexLevelParameteriv">
+<strong> getTexLevelParameteriv(Target, Level, Pname)  </strong><UL>Args: Target, Level, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetTexLevelParameter.html">C-API:</a> void glGetTexLevelParameteriv(GLenum target, GLint level, GLenum pname, GLint * params)<br>
+</UL>
+<p><A NAME="getTexParameterfv">
+<strong> getTexParameterfv(Target, Pname)  </strong><UL>Args: Target, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetTexParameter.html">C-API:</a> void glGetTexParameterfv(GLenum target, GLenum pname, GLfloat * params)<br>
+</UL>
+<p><A NAME="getTexParameteriv">
+<strong> getTexParameteriv(Target, Pname)  </strong><UL>Args: Target, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetTexParameter.html">C-API:</a> void glGetTexParameteriv(GLenum target, GLenum pname, GLint * params)<br>
+</UL>
+<p><A NAME="hint">
+<strong> hint(Target, Mode)  </strong><UL>Args: Target, Mode<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glHint.html">C-API:</a> void glHint(GLenum target, GLenum mode)<br>
+</UL>
+<p><A NAME="indexMask">
+<strong> indexMask(Mask)  </strong><UL>Args: Mask<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glIndexMask.html">C-API:</a> void glIndexMask(GLuint mask)<br>
+</UL>
+<p><A NAME="indexPointer">
+<strong> indexPointer(Type, Stride, Pointer)  </strong><UL>Args: Type, Stride, <<[Pointer]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glIndexPointer.html">C-API:</a> void glIndexPointer(GLenum type, GLsizei stride,  const GLvoid * pointer)<br>
+</UL>
+<p><A NAME="indexd">
+<strong> indexd(C)  </strong><UL>Args: C<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glIndexd.html">C-API:</a> void glIndexd(GLdouble c)<br>
+</UL>
+<p><A NAME="indexdv">
+<strong> indexdv(C)  </strong><UL>Args: <<[C]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glIndex.html">C-API:</a> void glIndexdv( const GLdouble * c)<br>
+</UL>
+<p><A NAME="indexf">
+<strong> indexf(C)  </strong><UL>Args: C<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glIndexf.html">C-API:</a> void glIndexf(GLfloat c)<br>
+</UL>
+<p><A NAME="indexfv">
+<strong> indexfv(C)  </strong><UL>Args: <<[C]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glIndex.html">C-API:</a> void glIndexfv( const GLfloat * c)<br>
+</UL>
+<p><A NAME="indexi">
+<strong> indexi(C)  </strong><UL>Args: C<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glIndexi.html">C-API:</a> void glIndexi(GLint c)<br>
+</UL>
+<p><A NAME="indexiv">
+<strong> indexiv(C)  </strong><UL>Args: <<[C]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glIndex.html">C-API:</a> void glIndexiv( const GLint * c)<br>
+</UL>
+<p><A NAME="indexs">
+<strong> indexs(C)  </strong><UL>Args: C<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glIndexs.html">C-API:</a> void glIndexs(GLshort c)<br>
+</UL>
+<p><A NAME="indexsv">
+<strong> indexsv(C)  </strong><UL>Args: <<[C]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glIndex.html">C-API:</a> void glIndexsv( const GLshort * c)<br>
+</UL>
+<p><A NAME="indexub">
+<strong> indexub(C)  </strong><UL>Args: C<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glIndex.html">C-API:</a> void glIndexub(GLubyte c)<br>
+</UL>
+<p><A NAME="indexubv">
+<strong> indexubv(C)  </strong><UL>Args: <<[C]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glIndexu.html">C-API:</a> void glIndexubv( const GLubyte * c)<br>
+</UL>
+<p><A NAME="initNames">
+<strong> initNames()  </strong><UL>Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glInitNames.html">C-API:</a> void glInitNames()<br>
+</UL>
+<p><A NAME="interleavedArrays">
+<strong> interleavedArrays(Format, Stride, Pointer)  </strong><UL>Args: Format, Stride, <<[Pointer]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glInterleavedArrays.html">C-API:</a> void glInterleavedArrays(GLenum format, GLsizei stride,  const GLvoid * pointer)<br>
+</UL>
+<p><A NAME="isEnabled">
+<strong> isEnabled(Cap)  </strong><UL>Args: Cap<br>
+Returns: ?GL_BYTE<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glIsEnabled.html">C-API:</a> GLboolean glIsEnabled(GLenum cap)<br>
+</UL>
+<p><A NAME="isList">
+<strong> isList(List)  </strong><UL>Args: List<br>
+Returns: ?GL_BYTE<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glIsList.html">C-API:</a> GLboolean glIsList(GLuint list)<br>
+</UL>
+<p><A NAME="isTexture">
+<strong> isTexture(Texture)  </strong><UL>Args: Texture<br>
+Returns: ?GL_BYTE<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glIsTexture.html">C-API:</a> GLboolean glIsTexture(GLuint texture)<br>
+</UL>
+<p><A NAME="lightModelf">
+<strong> lightModelf(Pname, Param)  </strong><UL>Args: Pname, Param<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glLightModelf.html">C-API:</a> void glLightModelf(GLenum pname, GLfloat param)<br>
+</UL>
+<p><A NAME="lightModelfv">
+<strong> lightModelfv(Pname, Params)  </strong><UL>Args: Pname, <<[Params]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glLightModel.html">C-API:</a> void glLightModelfv(GLenum pname,  const GLfloat * params)<br>
+</UL>
+<p><A NAME="lightModeli">
+<strong> lightModeli(Pname, Param)  </strong><UL>Args: Pname, Param<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glLightModeli.html">C-API:</a> void glLightModeli(GLenum pname, GLint param)<br>
+</UL>
+<p><A NAME="lightModeliv">
+<strong> lightModeliv(Pname, Params)  </strong><UL>Args: Pname, <<[Params]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glLightModel.html">C-API:</a> void glLightModeliv(GLenum pname,  const GLint * params)<br>
+</UL>
+<p><A NAME="lightf">
+<strong> lightf(Light, Pname, Param)  </strong><UL>Args: Light, Pname, Param<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glLightf.html">C-API:</a> void glLightf(GLenum light, GLenum pname, GLfloat param)<br>
+</UL>
+<p><A NAME="lightfv">
+<strong> lightfv(Light, Pname, Params)  </strong><UL>Args: Light, Pname, <<[Params]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glLight.html">C-API:</a> void glLightfv(GLenum light, GLenum pname,  const GLfloat * params)<br>
+</UL>
+<p><A NAME="lighti">
+<strong> lighti(Light, Pname, Param)  </strong><UL>Args: Light, Pname, Param<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glLighti.html">C-API:</a> void glLighti(GLenum light, GLenum pname, GLint param)<br>
+</UL>
+<p><A NAME="lightiv">
+<strong> lightiv(Light, Pname, Params)  </strong><UL>Args: Light, Pname, <<[Params]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glLight.html">C-API:</a> void glLightiv(GLenum light, GLenum pname,  const GLint * params)<br>
+</UL>
+<p><A NAME="lineStipple">
+<strong> lineStipple(Factor, Pattern)  </strong><UL>Args: Factor, Pattern<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glLineStipple.html">C-API:</a> void glLineStipple(GLint factor, GLushort pattern)<br>
+</UL>
+<p><A NAME="lineWidth">
+<strong> lineWidth(Width)  </strong><UL>Args: Width<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glLineWidth.html">C-API:</a> void glLineWidth(GLfloat width)<br>
+</UL>
+<p><A NAME="listBase">
+<strong> listBase(Base)  </strong><UL>Args: Base<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glListBase.html">C-API:</a> void glListBase(GLuint base)<br>
+</UL>
+<p><A NAME="loadIdentity">
+<strong> loadIdentity()  </strong><UL>Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glLoadIdentity.html">C-API:</a> void glLoadIdentity()<br>
+</UL>
+<p><A NAME="loadMatrixd">
+<strong> loadMatrixd(M)  </strong><UL>Args: <<[M]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glLoadMatrixd.html">C-API:</a> void glLoadMatrixd( const GLdouble * m)<br>
+</UL>
+<p><A NAME="loadMatrixf">
+<strong> loadMatrixf(M)  </strong><UL>Args: <<[M]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glLoadMatrixf.html">C-API:</a> void glLoadMatrixf( const GLfloat * m)<br>
+</UL>
+<p><A NAME="loadName">
+<strong> loadName(Name)  </strong><UL>Args: Name<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glLoadName.html">C-API:</a> void glLoadName(GLuint name)<br>
+</UL>
+<p><A NAME="logicOp">
+<strong> logicOp(Opcode)  </strong><UL>Args: Opcode<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glLogicOp.html">C-API:</a> void glLogicOp(GLenum opcode)<br>
+</UL>
+<p><A NAME="map1d">
+<strong> map1d(Target, U1, U2, Stride, Order, Points)  </strong><UL>Args: Target, U1, U2, Stride, Order, <<[Points]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMap.html">C-API:</a> void glMap1d(GLenum target, GLdouble u1, GLdouble u2, GLint stride, GLint order,  const GLdouble * points)<br>
+</UL>
+<p><A NAME="map1f">
+<strong> map1f(Target, U1, U2, Stride, Order, Points)  </strong><UL>Args: Target, U1, U2, Stride, Order, <<[Points]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMap.html">C-API:</a> void glMap1f(GLenum target, GLfloat u1, GLfloat u2, GLint stride, GLint order,  const GLfloat * points)<br>
+</UL>
+<p><A NAME="map2d">
+<strong> map2d(Target, U1, U2, Ustride, Uorder, V1, V2, Vstride, Vorder, Points)  </strong><UL>Args: Target, U1, U2, Ustride, Uorder, V1, V2, Vstride, Vorder, <<[Points]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMap.html">C-API:</a> void glMap2d(GLenum target, GLdouble u1, GLdouble u2, GLint ustride, GLint uorder, GLdouble v1, GLdouble v2, GLint vstride, GLint vorder,  const GLdouble * points)<br>
+</UL>
+<p><A NAME="map2f">
+<strong> map2f(Target, U1, U2, Ustride, Uorder, V1, V2, Vstride, Vorder, Points)  </strong><UL>Args: Target, U1, U2, Ustride, Uorder, V1, V2, Vstride, Vorder, <<[Points]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMap.html">C-API:</a> void glMap2f(GLenum target, GLfloat u1, GLfloat u2, GLint ustride, GLint uorder, GLfloat v1, GLfloat v2, GLint vstride, GLint vorder,  const GLfloat * points)<br>
+</UL>
+<p><A NAME="mapGrid1d">
+<strong> mapGrid1d(Un, U1, U2)  </strong><UL>Args: Un, U1, U2<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMapGrid.html">C-API:</a> void glMapGrid1d(GLint un, GLdouble u1, GLdouble u2)<br>
+</UL>
+<p><A NAME="mapGrid1f">
+<strong> mapGrid1f(Un, U1, U2)  </strong><UL>Args: Un, U1, U2<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMapGrid.html">C-API:</a> void glMapGrid1f(GLint un, GLfloat u1, GLfloat u2)<br>
+</UL>
+<p><A NAME="mapGrid2d">
+<strong> mapGrid2d(Un, U1, U2, Vn, V1, V2)  </strong><UL>Args: Un, U1, U2, Vn, V1, V2<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMapGrid.html">C-API:</a> void glMapGrid2d(GLint un, GLdouble u1, GLdouble u2, GLint vn, GLdouble v1, GLdouble v2)<br>
+</UL>
+<p><A NAME="mapGrid2f">
+<strong> mapGrid2f(Un, U1, U2, Vn, V1, V2)  </strong><UL>Args: Un, U1, U2, Vn, V1, V2<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMapGrid.html">C-API:</a> void glMapGrid2f(GLint un, GLfloat u1, GLfloat u2, GLint vn, GLfloat v1, GLfloat v2)<br>
+</UL>
+<p><A NAME="materialf">
+<strong> materialf(Face, Pname, Param)  </strong><UL>Args: Face, Pname, Param<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMaterialf.html">C-API:</a> void glMaterialf(GLenum face, GLenum pname, GLfloat param)<br>
+</UL>
+<p><A NAME="materialfv">
+<strong> materialfv(Face, Pname, Params)  </strong><UL>Args: Face, Pname, <<[Params]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMaterial.html">C-API:</a> void glMaterialfv(GLenum face, GLenum pname,  const GLfloat * params)<br>
+</UL>
+<p><A NAME="materiali">
+<strong> materiali(Face, Pname, Param)  </strong><UL>Args: Face, Pname, Param<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMateriali.html">C-API:</a> void glMateriali(GLenum face, GLenum pname, GLint param)<br>
+</UL>
+<p><A NAME="materialiv">
+<strong> materialiv(Face, Pname, Params)  </strong><UL>Args: Face, Pname, <<[Params]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMaterial.html">C-API:</a> void glMaterialiv(GLenum face, GLenum pname,  const GLint * params)<br>
+</UL>
+<p><A NAME="matrixMode">
+<strong> matrixMode(Mode)  </strong><UL>Args: Mode<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMatrixMode.html">C-API:</a> void glMatrixMode(GLenum mode)<br>
+</UL>
+<p><A NAME="multMatrixd">
+<strong> multMatrixd(M)  </strong><UL>Args: <<[M]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultMatrixd.html">C-API:</a> void glMultMatrixd( const GLdouble * m)<br>
+</UL>
+<p><A NAME="multMatrixf">
+<strong> multMatrixf(M)  </strong><UL>Args: <<[M]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultMatrixf.html">C-API:</a> void glMultMatrixf( const GLfloat * m)<br>
+</UL>
+<p><A NAME="newList">
+<strong> newList(List, Mode)  </strong><UL>Args: List, Mode<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glNewList.html">C-API:</a> void glNewList(GLuint list, GLenum mode)<br>
+</UL>
+<p><A NAME="normal3b">
+<strong> normal3b(Nx, Ny, Nz)  </strong><UL>Args: Nx, Ny, Nz<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glNormal.html">C-API:</a> void glNormal3b(GLbyte nx, GLbyte ny, GLbyte nz)<br>
+</UL>
+<p><A NAME="normal3bv">
+<strong> normal3bv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glNormal.html">C-API:</a> void glNormal3bv( const GLbyte * v)<br>
+</UL>
+<p><A NAME="normal3d">
+<strong> normal3d(Nx, Ny, Nz)  </strong><UL>Args: Nx, Ny, Nz<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glNormal.html">C-API:</a> void glNormal3d(GLdouble nx, GLdouble ny, GLdouble nz)<br>
+</UL>
+<p><A NAME="normal3dv">
+<strong> normal3dv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glNormal.html">C-API:</a> void glNormal3dv( const GLdouble * v)<br>
+</UL>
+<p><A NAME="normal3f">
+<strong> normal3f(Nx, Ny, Nz)  </strong><UL>Args: Nx, Ny, Nz<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glNormal.html">C-API:</a> void glNormal3f(GLfloat nx, GLfloat ny, GLfloat nz)<br>
+</UL>
+<p><A NAME="normal3fv">
+<strong> normal3fv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glNormal.html">C-API:</a> void glNormal3fv( const GLfloat * v)<br>
+</UL>
+<p><A NAME="normal3i">
+<strong> normal3i(Nx, Ny, Nz)  </strong><UL>Args: Nx, Ny, Nz<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glNormal.html">C-API:</a> void glNormal3i(GLint nx, GLint ny, GLint nz)<br>
+</UL>
+<p><A NAME="normal3iv">
+<strong> normal3iv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glNormal.html">C-API:</a> void glNormal3iv( const GLint * v)<br>
+</UL>
+<p><A NAME="normal3s">
+<strong> normal3s(Nx, Ny, Nz)  </strong><UL>Args: Nx, Ny, Nz<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glNormal.html">C-API:</a> void glNormal3s(GLshort nx, GLshort ny, GLshort nz)<br>
+</UL>
+<p><A NAME="normal3sv">
+<strong> normal3sv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glNormal.html">C-API:</a> void glNormal3sv( const GLshort * v)<br>
+</UL>
+<p><A NAME="normalPointer">
+<strong> normalPointer(Type, Stride, Pointer)  </strong><UL>Args: Type, Stride, <<[Pointer]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glNormalPointer.html">C-API:</a> void glNormalPointer(GLenum type, GLsizei stride,  const GLvoid * pointer)<br>
+</UL>
+<p><A NAME="ortho">
+<strong> ortho(Left, Right, Bottom, Top, ZNear, ZFar)  </strong><UL>Args: Left, Right, Bottom, Top, ZNear, ZFar<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glOrtho.html">C-API:</a> void glOrtho(GLdouble left, GLdouble right, GLdouble bottom, GLdouble top, GLdouble zNear, GLdouble zFar)<br>
+</UL>
+<p><A NAME="passThrough">
+<strong> passThrough(Token)  </strong><UL>Args: Token<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glPassThrough.html">C-API:</a> void glPassThrough(GLfloat token)<br>
+</UL>
+<p><A NAME="pixelMapfv">
+<strong> pixelMapfv(Map, Mapsize, Values)  </strong><UL>Args: Map, Mapsize, <<[Values]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glPixelMap.html">C-API:</a> void glPixelMapfv(GLenum map, GLint mapsize,  const GLfloat * values)<br>
+</UL>
+<p><A NAME="pixelMapuiv">
+<strong> pixelMapuiv(Map, Mapsize, Values)  </strong><UL>Args: Map, Mapsize, <<[Values]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glPixelMapu.html">C-API:</a> void glPixelMapuiv(GLenum map, GLint mapsize,  const GLuint * values)<br>
+</UL>
+<p><A NAME="pixelMapusv">
+<strong> pixelMapusv(Map, Mapsize, Values)  </strong><UL>Args: Map, Mapsize, <<[Values]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glPixelMapu.html">C-API:</a> void glPixelMapusv(GLenum map, GLint mapsize,  const GLushort * values)<br>
+</UL>
+<p><A NAME="pixelStoref">
+<strong> pixelStoref(Pname, Param)  </strong><UL>Args: Pname, Param<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glPixelStoref.html">C-API:</a> void glPixelStoref(GLenum pname, GLfloat param)<br>
+</UL>
+<p><A NAME="pixelStorei">
+<strong> pixelStorei(Pname, Param)  </strong><UL>Args: Pname, Param<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glPixelStorei.html">C-API:</a> void glPixelStorei(GLenum pname, GLint param)<br>
+</UL>
+<p><A NAME="pixelTransferf">
+<strong> pixelTransferf(Pname, Param)  </strong><UL>Args: Pname, Param<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glPixelTransferf.html">C-API:</a> void glPixelTransferf(GLenum pname, GLfloat param)<br>
+</UL>
+<p><A NAME="pixelTransferi">
+<strong> pixelTransferi(Pname, Param)  </strong><UL>Args: Pname, Param<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glPixelTransferi.html">C-API:</a> void glPixelTransferi(GLenum pname, GLint param)<br>
+</UL>
+<p><A NAME="pixelZoom">
+<strong> pixelZoom(Xfactor, Yfactor)  </strong><UL>Args: Xfactor, Yfactor<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glPixelZoom.html">C-API:</a> void glPixelZoom(GLfloat xfactor, GLfloat yfactor)<br>
+</UL>
+<p><A NAME="pointSize">
+<strong> pointSize(Size)  </strong><UL>Args: Size<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glPointSize.html">C-API:</a> void glPointSize(GLfloat size)<br>
+</UL>
+<p><A NAME="polygonMode">
+<strong> polygonMode(Face, Mode)  </strong><UL>Args: Face, Mode<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glPolygonMode.html">C-API:</a> void glPolygonMode(GLenum face, GLenum mode)<br>
+</UL>
+<p><A NAME="polygonOffset">
+<strong> polygonOffset(Factor, Units)  </strong><UL>Args: Factor, Units<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glPolygonOffset.html">C-API:</a> void glPolygonOffset(GLfloat factor, GLfloat units)<br>
+</UL>
+<p><A NAME="polygonStipple">
+<strong> polygonStipple(Mask)  </strong><UL>Args: <<[Mask]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glPolygonStipple.html">C-API:</a> void glPolygonStipple( const GLubyte * mask)<br>
+</UL>
+<p><A NAME="popAttrib">
+<strong> popAttrib()  </strong><UL>Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glPopAttrib.html">C-API:</a> void glPopAttrib()<br>
+</UL>
+<p><A NAME="popClientAttrib">
+<strong> popClientAttrib()  </strong><UL>Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glPopClientAttrib.html">C-API:</a> void glPopClientAttrib()<br>
+</UL>
+<p><A NAME="popMatrix">
+<strong> popMatrix()  </strong><UL>Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glPopMatrix.html">C-API:</a> void glPopMatrix()<br>
+</UL>
+<p><A NAME="popName">
+<strong> popName()  </strong><UL>Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glPopName.html">C-API:</a> void glPopName()<br>
+</UL>
+<p><A NAME="prioritizeTextures">
+<strong> prioritizeTextures(N, Textures, Priorities)  </strong><UL>Args: N, <<[Textures]>>, <<[Priorities]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glPrioritizeTextures.html">C-API:</a> void glPrioritizeTextures(GLsizei n,  const GLuint * textures,  const GLclampf * priorities)<br>
+</UL>
+<p><A NAME="pushAttrib">
+<strong> pushAttrib(Mask)  </strong><UL>Args: Mask<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glPushAttrib.html">C-API:</a> void glPushAttrib(GLbitfield mask)<br>
+</UL>
+<p><A NAME="pushClientAttrib">
+<strong> pushClientAttrib(Mask)  </strong><UL>Args: Mask<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glPushClientAttrib.html">C-API:</a> void glPushClientAttrib(GLbitfield mask)<br>
+</UL>
+<p><A NAME="pushMatrix">
+<strong> pushMatrix()  </strong><UL>Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glPushMatrix.html">C-API:</a> void glPushMatrix()<br>
+</UL>
+<p><A NAME="pushName">
+<strong> pushName(Name)  </strong><UL>Args: Name<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glPushName.html">C-API:</a> void glPushName(GLuint name)<br>
+</UL>
+<p><A NAME="rasterPos2d">
+<strong> rasterPos2d(X, Y)  </strong><UL>Args: X, Y<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRasterPos.html">C-API:</a> void glRasterPos2d(GLdouble x, GLdouble y)<br>
+</UL>
+<p><A NAME="rasterPos2dv">
+<strong> rasterPos2dv({V1,V2})  </strong><UL>Args: {V1,V2}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRasterPos.html">C-API:</a> void glRasterPos2dv( const GLdouble * v)<br>
+</UL>
+<p><A NAME="rasterPos2f">
+<strong> rasterPos2f(X, Y)  </strong><UL>Args: X, Y<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRasterPos.html">C-API:</a> void glRasterPos2f(GLfloat x, GLfloat y)<br>
+</UL>
+<p><A NAME="rasterPos2fv">
+<strong> rasterPos2fv({V1,V2})  </strong><UL>Args: {V1,V2}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRasterPos.html">C-API:</a> void glRasterPos2fv( const GLfloat * v)<br>
+</UL>
+<p><A NAME="rasterPos2i">
+<strong> rasterPos2i(X, Y)  </strong><UL>Args: X, Y<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRasterPos.html">C-API:</a> void glRasterPos2i(GLint x, GLint y)<br>
+</UL>
+<p><A NAME="rasterPos2iv">
+<strong> rasterPos2iv({V1,V2})  </strong><UL>Args: {V1,V2}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRasterPos.html">C-API:</a> void glRasterPos2iv( const GLint * v)<br>
+</UL>
+<p><A NAME="rasterPos2s">
+<strong> rasterPos2s(X, Y)  </strong><UL>Args: X, Y<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRasterPos.html">C-API:</a> void glRasterPos2s(GLshort x, GLshort y)<br>
+</UL>
+<p><A NAME="rasterPos2sv">
+<strong> rasterPos2sv({V1,V2})  </strong><UL>Args: {V1,V2}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRasterPos.html">C-API:</a> void glRasterPos2sv( const GLshort * v)<br>
+</UL>
+<p><A NAME="rasterPos3d">
+<strong> rasterPos3d(X, Y, Z)  </strong><UL>Args: X, Y, Z<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRasterPos.html">C-API:</a> void glRasterPos3d(GLdouble x, GLdouble y, GLdouble z)<br>
+</UL>
+<p><A NAME="rasterPos3dv">
+<strong> rasterPos3dv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRasterPos.html">C-API:</a> void glRasterPos3dv( const GLdouble * v)<br>
+</UL>
+<p><A NAME="rasterPos3f">
+<strong> rasterPos3f(X, Y, Z)  </strong><UL>Args: X, Y, Z<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRasterPos.html">C-API:</a> void glRasterPos3f(GLfloat x, GLfloat y, GLfloat z)<br>
+</UL>
+<p><A NAME="rasterPos3fv">
+<strong> rasterPos3fv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRasterPos.html">C-API:</a> void glRasterPos3fv( const GLfloat * v)<br>
+</UL>
+<p><A NAME="rasterPos3i">
+<strong> rasterPos3i(X, Y, Z)  </strong><UL>Args: X, Y, Z<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRasterPos.html">C-API:</a> void glRasterPos3i(GLint x, GLint y, GLint z)<br>
+</UL>
+<p><A NAME="rasterPos3iv">
+<strong> rasterPos3iv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRasterPos.html">C-API:</a> void glRasterPos3iv( const GLint * v)<br>
+</UL>
+<p><A NAME="rasterPos3s">
+<strong> rasterPos3s(X, Y, Z)  </strong><UL>Args: X, Y, Z<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRasterPos.html">C-API:</a> void glRasterPos3s(GLshort x, GLshort y, GLshort z)<br>
+</UL>
+<p><A NAME="rasterPos3sv">
+<strong> rasterPos3sv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRasterPos.html">C-API:</a> void glRasterPos3sv( const GLshort * v)<br>
+</UL>
+<p><A NAME="rasterPos4d">
+<strong> rasterPos4d(X, Y, Z, W)  </strong><UL>Args: X, Y, Z, W<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRasterPos.html">C-API:</a> void glRasterPos4d(GLdouble x, GLdouble y, GLdouble z, GLdouble w)<br>
+</UL>
+<p><A NAME="rasterPos4dv">
+<strong> rasterPos4dv({V1,V2,V3,V4})  </strong><UL>Args: {V1,V2,V3,V4}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRasterPos.html">C-API:</a> void glRasterPos4dv( const GLdouble * v)<br>
+</UL>
+<p><A NAME="rasterPos4f">
+<strong> rasterPos4f(X, Y, Z, W)  </strong><UL>Args: X, Y, Z, W<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRasterPos.html">C-API:</a> void glRasterPos4f(GLfloat x, GLfloat y, GLfloat z, GLfloat w)<br>
+</UL>
+<p><A NAME="rasterPos4fv">
+<strong> rasterPos4fv({V1,V2,V3,V4})  </strong><UL>Args: {V1,V2,V3,V4}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRasterPos.html">C-API:</a> void glRasterPos4fv( const GLfloat * v)<br>
+</UL>
+<p><A NAME="rasterPos4i">
+<strong> rasterPos4i(X, Y, Z, W)  </strong><UL>Args: X, Y, Z, W<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRasterPos.html">C-API:</a> void glRasterPos4i(GLint x, GLint y, GLint z, GLint w)<br>
+</UL>
+<p><A NAME="rasterPos4iv">
+<strong> rasterPos4iv({V1,V2,V3,V4})  </strong><UL>Args: {V1,V2,V3,V4}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRasterPos.html">C-API:</a> void glRasterPos4iv( const GLint * v)<br>
+</UL>
+<p><A NAME="rasterPos4s">
+<strong> rasterPos4s(X, Y, Z, W)  </strong><UL>Args: X, Y, Z, W<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRasterPos.html">C-API:</a> void glRasterPos4s(GLshort x, GLshort y, GLshort z, GLshort w)<br>
+</UL>
+<p><A NAME="rasterPos4sv">
+<strong> rasterPos4sv({V1,V2,V3,V4})  </strong><UL>Args: {V1,V2,V3,V4}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRasterPos.html">C-API:</a> void glRasterPos4sv( const GLshort * v)<br>
+</UL>
+<p><A NAME="readBuffer">
+<strong> readBuffer(Mode)  </strong><UL>Args: Mode<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glReadBuffer.html">C-API:</a> void glReadBuffer(GLenum mode)<br>
+</UL>
+<p><A NAME="readPixels">
+<strong> readPixels(X, Y, Width, Height, Format, Type, #sdlmem{bin=Pixels})  </strong><UL>Args: X, Y, Width, Height, Format, Type, #sdlmem{} = Pixels<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glReadPixels.html">C-API:</a> void glReadPixels(GLint x, GLint y, GLsizei width, GLsizei height, GLenum format, GLenum type, GLvoid * pixels)<br>
+</UL>
+<p><A NAME="rectd">
+<strong> rectd(X1, Y1, X2, Y2)  </strong><UL>Args: X1, Y1, X2, Y2<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRectd.html">C-API:</a> void glRectd(GLdouble x1, GLdouble y1, GLdouble x2, GLdouble y2)<br>
+</UL>
+<p><A NAME="rectdv">
+<strong> rectdv(V1, V2)  </strong><UL>Args: <<[V1]>>, <<[V2]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRect.html">C-API:</a> void glRectdv( const GLdouble * v1,  const GLdouble * v2)<br>
+</UL>
+<p><A NAME="rectf">
+<strong> rectf(X1, Y1, X2, Y2)  </strong><UL>Args: X1, Y1, X2, Y2<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRectf.html">C-API:</a> void glRectf(GLfloat x1, GLfloat y1, GLfloat x2, GLfloat y2)<br>
+</UL>
+<p><A NAME="rectfv">
+<strong> rectfv(V1, V2)  </strong><UL>Args: <<[V1]>>, <<[V2]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRect.html">C-API:</a> void glRectfv( const GLfloat * v1,  const GLfloat * v2)<br>
+</UL>
+<p><A NAME="recti">
+<strong> recti(X1, Y1, X2, Y2)  </strong><UL>Args: X1, Y1, X2, Y2<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRecti.html">C-API:</a> void glRecti(GLint x1, GLint y1, GLint x2, GLint y2)<br>
+</UL>
+<p><A NAME="rectiv">
+<strong> rectiv(V1, V2)  </strong><UL>Args: <<[V1]>>, <<[V2]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRect.html">C-API:</a> void glRectiv( const GLint * v1,  const GLint * v2)<br>
+</UL>
+<p><A NAME="rects">
+<strong> rects(X1, Y1, X2, Y2)  </strong><UL>Args: X1, Y1, X2, Y2<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRects.html">C-API:</a> void glRects(GLshort x1, GLshort y1, GLshort x2, GLshort y2)<br>
+</UL>
+<p><A NAME="rectsv">
+<strong> rectsv(V1, V2)  </strong><UL>Args: <<[V1]>>, <<[V2]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRect.html">C-API:</a> void glRectsv( const GLshort * v1,  const GLshort * v2)<br>
+</UL>
+<p><A NAME="renderMode">
+<strong> renderMode(Mode)  </strong><UL>Args: Mode<br>
+Returns: ?GL_INT<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRenderMode.html">C-API:</a> GLint glRenderMode(GLenum mode)<br>
+</UL>
+<p><A NAME="rotated">
+<strong> rotated(Angle, X, Y, Z)  </strong><UL>Args: Angle, X, Y, Z<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRotated.html">C-API:</a> void glRotated(GLdouble angle, GLdouble x, GLdouble y, GLdouble z)<br>
+</UL>
+<p><A NAME="rotatef">
+<strong> rotatef(Angle, X, Y, Z)  </strong><UL>Args: Angle, X, Y, Z<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRotatef.html">C-API:</a> void glRotatef(GLfloat angle, GLfloat x, GLfloat y, GLfloat z)<br>
+</UL>
+<p><A NAME="scaled">
+<strong> scaled(X, Y, Z)  </strong><UL>Args: X, Y, Z<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glScaled.html">C-API:</a> void glScaled(GLdouble x, GLdouble y, GLdouble z)<br>
+</UL>
+<p><A NAME="scalef">
+<strong> scalef(X, Y, Z)  </strong><UL>Args: X, Y, Z<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glScalef.html">C-API:</a> void glScalef(GLfloat x, GLfloat y, GLfloat z)<br>
+</UL>
+<p><A NAME="scissor">
+<strong> scissor(X, Y, Width, Height)  </strong><UL>Args: X, Y, Width, Height<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glScissor.html">C-API:</a> void glScissor(GLint x, GLint y, GLsizei width, GLsizei height)<br>
+</UL>
+<p><A NAME="selectBuffer">
+<strong> selectBuffer(Size, #sdlmem{bin=Buffer})  </strong><UL>Args: Size, #sdlmem{} = Buffer<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glSelectBuffer.html">C-API:</a> void glSelectBuffer(GLsizei size, GLuint * buffer)<br>
+</UL>
+<p><A NAME="shadeModel">
+<strong> shadeModel(Mode)  </strong><UL>Args: Mode<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glShadeModel.html">C-API:</a> void glShadeModel(GLenum mode)<br>
+</UL>
+<p><A NAME="stencilFunc">
+<strong> stencilFunc(Func, Ref, Mask)  </strong><UL>Args: Func, Ref, Mask<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glStencilFunc.html">C-API:</a> void glStencilFunc(GLenum func, GLint ref, GLuint mask)<br>
+</UL>
+<p><A NAME="stencilMask">
+<strong> stencilMask(Mask)  </strong><UL>Args: Mask<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glStencilMask.html">C-API:</a> void glStencilMask(GLuint mask)<br>
+</UL>
+<p><A NAME="stencilOp">
+<strong> stencilOp(Fail, Zfail, Zpass)  </strong><UL>Args: Fail, Zfail, Zpass<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glStencilOp.html">C-API:</a> void glStencilOp(GLenum fail, GLenum zfail, GLenum zpass)<br>
+</UL>
+<p><A NAME="texCoord1d">
+<strong> texCoord1d(S)  </strong><UL>Args: S<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexCoord.html">C-API:</a> void glTexCoord1d(GLdouble s)<br>
+</UL>
+<p><A NAME="texCoord1dv">
+<strong> texCoord1dv({V1})  </strong><UL>Args: {V1}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexCoord.html">C-API:</a> void glTexCoord1dv( const GLdouble * v)<br>
+</UL>
+<p><A NAME="texCoord1f">
+<strong> texCoord1f(S)  </strong><UL>Args: S<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexCoord.html">C-API:</a> void glTexCoord1f(GLfloat s)<br>
+</UL>
+<p><A NAME="texCoord1fv">
+<strong> texCoord1fv({V1})  </strong><UL>Args: {V1}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexCoord.html">C-API:</a> void glTexCoord1fv( const GLfloat * v)<br>
+</UL>
+<p><A NAME="texCoord1i">
+<strong> texCoord1i(S)  </strong><UL>Args: S<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexCoord.html">C-API:</a> void glTexCoord1i(GLint s)<br>
+</UL>
+<p><A NAME="texCoord1iv">
+<strong> texCoord1iv({V1})  </strong><UL>Args: {V1}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexCoord.html">C-API:</a> void glTexCoord1iv( const GLint * v)<br>
+</UL>
+<p><A NAME="texCoord1s">
+<strong> texCoord1s(S)  </strong><UL>Args: S<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexCoord.html">C-API:</a> void glTexCoord1s(GLshort s)<br>
+</UL>
+<p><A NAME="texCoord1sv">
+<strong> texCoord1sv({V1})  </strong><UL>Args: {V1}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexCoord.html">C-API:</a> void glTexCoord1sv( const GLshort * v)<br>
+</UL>
+<p><A NAME="texCoord2d">
+<strong> texCoord2d(S, T)  </strong><UL>Args: S, T<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexCoord.html">C-API:</a> void glTexCoord2d(GLdouble s, GLdouble t)<br>
+</UL>
+<p><A NAME="texCoord2dv">
+<strong> texCoord2dv({V1,V2})  </strong><UL>Args: {V1,V2}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexCoord.html">C-API:</a> void glTexCoord2dv( const GLdouble * v)<br>
+</UL>
+<p><A NAME="texCoord2f">
+<strong> texCoord2f(S, T)  </strong><UL>Args: S, T<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexCoord.html">C-API:</a> void glTexCoord2f(GLfloat s, GLfloat t)<br>
+</UL>
+<p><A NAME="texCoord2fv">
+<strong> texCoord2fv({V1,V2})  </strong><UL>Args: {V1,V2}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexCoord.html">C-API:</a> void glTexCoord2fv( const GLfloat * v)<br>
+</UL>
+<p><A NAME="texCoord2i">
+<strong> texCoord2i(S, T)  </strong><UL>Args: S, T<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexCoord.html">C-API:</a> void glTexCoord2i(GLint s, GLint t)<br>
+</UL>
+<p><A NAME="texCoord2iv">
+<strong> texCoord2iv({V1,V2})  </strong><UL>Args: {V1,V2}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexCoord.html">C-API:</a> void glTexCoord2iv( const GLint * v)<br>
+</UL>
+<p><A NAME="texCoord2s">
+<strong> texCoord2s(S, T)  </strong><UL>Args: S, T<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexCoord.html">C-API:</a> void glTexCoord2s(GLshort s, GLshort t)<br>
+</UL>
+<p><A NAME="texCoord2sv">
+<strong> texCoord2sv({V1,V2})  </strong><UL>Args: {V1,V2}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexCoord.html">C-API:</a> void glTexCoord2sv( const GLshort * v)<br>
+</UL>
+<p><A NAME="texCoord3d">
+<strong> texCoord3d(S, T, R)  </strong><UL>Args: S, T, R<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexCoord.html">C-API:</a> void glTexCoord3d(GLdouble s, GLdouble t, GLdouble r)<br>
+</UL>
+<p><A NAME="texCoord3dv">
+<strong> texCoord3dv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexCoord.html">C-API:</a> void glTexCoord3dv( const GLdouble * v)<br>
+</UL>
+<p><A NAME="texCoord3f">
+<strong> texCoord3f(S, T, R)  </strong><UL>Args: S, T, R<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexCoord.html">C-API:</a> void glTexCoord3f(GLfloat s, GLfloat t, GLfloat r)<br>
+</UL>
+<p><A NAME="texCoord3fv">
+<strong> texCoord3fv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexCoord.html">C-API:</a> void glTexCoord3fv( const GLfloat * v)<br>
+</UL>
+<p><A NAME="texCoord3i">
+<strong> texCoord3i(S, T, R)  </strong><UL>Args: S, T, R<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexCoord.html">C-API:</a> void glTexCoord3i(GLint s, GLint t, GLint r)<br>
+</UL>
+<p><A NAME="texCoord3iv">
+<strong> texCoord3iv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexCoord.html">C-API:</a> void glTexCoord3iv( const GLint * v)<br>
+</UL>
+<p><A NAME="texCoord3s">
+<strong> texCoord3s(S, T, R)  </strong><UL>Args: S, T, R<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexCoord.html">C-API:</a> void glTexCoord3s(GLshort s, GLshort t, GLshort r)<br>
+</UL>
+<p><A NAME="texCoord3sv">
+<strong> texCoord3sv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexCoord.html">C-API:</a> void glTexCoord3sv( const GLshort * v)<br>
+</UL>
+<p><A NAME="texCoord4d">
+<strong> texCoord4d(S, T, R, Q)  </strong><UL>Args: S, T, R, Q<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexCoord.html">C-API:</a> void glTexCoord4d(GLdouble s, GLdouble t, GLdouble r, GLdouble q)<br>
+</UL>
+<p><A NAME="texCoord4dv">
+<strong> texCoord4dv({V1,V2,V3,V4})  </strong><UL>Args: {V1,V2,V3,V4}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexCoord.html">C-API:</a> void glTexCoord4dv( const GLdouble * v)<br>
+</UL>
+<p><A NAME="texCoord4f">
+<strong> texCoord4f(S, T, R, Q)  </strong><UL>Args: S, T, R, Q<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexCoord.html">C-API:</a> void glTexCoord4f(GLfloat s, GLfloat t, GLfloat r, GLfloat q)<br>
+</UL>
+<p><A NAME="texCoord4fv">
+<strong> texCoord4fv({V1,V2,V3,V4})  </strong><UL>Args: {V1,V2,V3,V4}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexCoord.html">C-API:</a> void glTexCoord4fv( const GLfloat * v)<br>
+</UL>
+<p><A NAME="texCoord4i">
+<strong> texCoord4i(S, T, R, Q)  </strong><UL>Args: S, T, R, Q<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexCoord.html">C-API:</a> void glTexCoord4i(GLint s, GLint t, GLint r, GLint q)<br>
+</UL>
+<p><A NAME="texCoord4iv">
+<strong> texCoord4iv({V1,V2,V3,V4})  </strong><UL>Args: {V1,V2,V3,V4}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexCoord.html">C-API:</a> void glTexCoord4iv( const GLint * v)<br>
+</UL>
+<p><A NAME="texCoord4s">
+<strong> texCoord4s(S, T, R, Q)  </strong><UL>Args: S, T, R, Q<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexCoord.html">C-API:</a> void glTexCoord4s(GLshort s, GLshort t, GLshort r, GLshort q)<br>
+</UL>
+<p><A NAME="texCoord4sv">
+<strong> texCoord4sv({V1,V2,V3,V4})  </strong><UL>Args: {V1,V2,V3,V4}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexCoord.html">C-API:</a> void glTexCoord4sv( const GLshort * v)<br>
+</UL>
+<p><A NAME="texCoordPointer">
+<strong> texCoordPointer(Size, Type, Stride, Pointer)  </strong><UL>Args: Size, Type, Stride, <<[Pointer]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexCoordPointer.html">C-API:</a> void glTexCoordPointer(GLint size, GLenum type, GLsizei stride,  const GLvoid * pointer)<br>
+</UL>
+<p><A NAME="texEnvf">
+<strong> texEnvf(Target, Pname, Param)  </strong><UL>Args: Target, Pname, Param<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexEnvf.html">C-API:</a> void glTexEnvf(GLenum target, GLenum pname, GLfloat param)<br>
+</UL>
+<p><A NAME="texEnvfv">
+<strong> texEnvfv(Target, Pname, Params)  </strong><UL>Args: Target, Pname, <<[Params]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexEnv.html">C-API:</a> void glTexEnvfv(GLenum target, GLenum pname,  const GLfloat * params)<br>
+</UL>
+<p><A NAME="texEnvi">
+<strong> texEnvi(Target, Pname, Param)  </strong><UL>Args: Target, Pname, Param<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexEnvi.html">C-API:</a> void glTexEnvi(GLenum target, GLenum pname, GLint param)<br>
+</UL>
+<p><A NAME="texEnviv">
+<strong> texEnviv(Target, Pname, Params)  </strong><UL>Args: Target, Pname, <<[Params]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexEnv.html">C-API:</a> void glTexEnviv(GLenum target, GLenum pname,  const GLint * params)<br>
+</UL>
+<p><A NAME="texGend">
+<strong> texGend(Coord, Pname, Param)  </strong><UL>Args: Coord, Pname, Param<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexGend.html">C-API:</a> void glTexGend(GLenum coord, GLenum pname, GLdouble param)<br>
+</UL>
+<p><A NAME="texGendv">
+<strong> texGendv(Coord, Pname, Params)  </strong><UL>Args: Coord, Pname, <<[Params]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexGen.html">C-API:</a> void glTexGendv(GLenum coord, GLenum pname,  const GLdouble * params)<br>
+</UL>
+<p><A NAME="texGenf">
+<strong> texGenf(Coord, Pname, Param)  </strong><UL>Args: Coord, Pname, Param<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexGenf.html">C-API:</a> void glTexGenf(GLenum coord, GLenum pname, GLfloat param)<br>
+</UL>
+<p><A NAME="texGenfv">
+<strong> texGenfv(Coord, Pname, Params)  </strong><UL>Args: Coord, Pname, <<[Params]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexGen.html">C-API:</a> void glTexGenfv(GLenum coord, GLenum pname,  const GLfloat * params)<br>
+</UL>
+<p><A NAME="texGeni">
+<strong> texGeni(Coord, Pname, Param)  </strong><UL>Args: Coord, Pname, Param<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexGeni.html">C-API:</a> void glTexGeni(GLenum coord, GLenum pname, GLint param)<br>
+</UL>
+<p><A NAME="texGeniv">
+<strong> texGeniv(Coord, Pname, Params)  </strong><UL>Args: Coord, Pname, <<[Params]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexGen.html">C-API:</a> void glTexGeniv(GLenum coord, GLenum pname,  const GLint * params)<br>
+</UL>
+<p><A NAME="texImage1D">
+<strong> texImage1D(Target, Level, Internalformat, Width, Border, Format, Type, Pixels)  </strong><UL>Args: Target, Level, Internalformat, Width, Border, Format, Type, <<[Pixels]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexImage1D.html">C-API:</a> void glTexImage1D(GLenum target, GLint level, GLint internalformat, GLsizei width, GLint border, GLenum format, GLenum type,  const GLvoid * pixels)<br>
+</UL>
+<p><A NAME="texImage2D">
+<strong> texImage2D(Target, Level, Internalformat, Width, Height, Border, Format, Type, Pixels)  </strong><UL>Args: Target, Level, Internalformat, Width, Height, Border, Format, Type, <<[Pixels]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexImage2D.html">C-API:</a> void glTexImage2D(GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLint border, GLenum format, GLenum type,  const GLvoid * pixels)<br>
+</UL>
+<p><A NAME="texParameterf">
+<strong> texParameterf(Target, Pname, Param)  </strong><UL>Args: Target, Pname, Param<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexParameterf.html">C-API:</a> void glTexParameterf(GLenum target, GLenum pname, GLfloat param)<br>
+</UL>
+<p><A NAME="texParameterfv">
+<strong> texParameterfv(Target, Pname, Params)  </strong><UL>Args: Target, Pname, <<[Params]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexParameter.html">C-API:</a> void glTexParameterfv(GLenum target, GLenum pname,  const GLfloat * params)<br>
+</UL>
+<p><A NAME="texParameteri">
+<strong> texParameteri(Target, Pname, Param)  </strong><UL>Args: Target, Pname, Param<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexParameteri.html">C-API:</a> void glTexParameteri(GLenum target, GLenum pname, GLint param)<br>
+</UL>
+<p><A NAME="texParameteriv">
+<strong> texParameteriv(Target, Pname, Params)  </strong><UL>Args: Target, Pname, <<[Params]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexParameter.html">C-API:</a> void glTexParameteriv(GLenum target, GLenum pname,  const GLint * params)<br>
+</UL>
+<p><A NAME="texSubImage1D">
+<strong> texSubImage1D(Target, Level, Xoffset, Width, Format, Type, Pixels)  </strong><UL>Args: Target, Level, Xoffset, Width, Format, Type, <<[Pixels]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexSubImage1D.html">C-API:</a> void glTexSubImage1D(GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLenum type,  const GLvoid * pixels)<br>
+</UL>
+<p><A NAME="texSubImage2D">
+<strong> texSubImage2D(Target, Level, Xoffset, Yoffset, Width, Height, Format, Type, Pixels)  </strong><UL>Args: Target, Level, Xoffset, Yoffset, Width, Height, Format, Type, <<[Pixels]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexSubImage2D.html">C-API:</a> void glTexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLenum type,  const GLvoid * pixels)<br>
+</UL>
+<p><A NAME="translated">
+<strong> translated(X, Y, Z)  </strong><UL>Args: X, Y, Z<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTranslated.html">C-API:</a> void glTranslated(GLdouble x, GLdouble y, GLdouble z)<br>
+</UL>
+<p><A NAME="translatef">
+<strong> translatef(X, Y, Z)  </strong><UL>Args: X, Y, Z<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTranslatef.html">C-API:</a> void glTranslatef(GLfloat x, GLfloat y, GLfloat z)<br>
+</UL>
+<p><A NAME="vertex2d">
+<strong> vertex2d(X, Y)  </strong><UL>Args: X, Y<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertex.html">C-API:</a> void glVertex2d(GLdouble x, GLdouble y)<br>
+</UL>
+<p><A NAME="vertex2dv">
+<strong> vertex2dv({V1,V2})  </strong><UL>Args: {V1,V2}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertex.html">C-API:</a> void glVertex2dv( const GLdouble * v)<br>
+</UL>
+<p><A NAME="vertex2f">
+<strong> vertex2f(X, Y)  </strong><UL>Args: X, Y<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertex.html">C-API:</a> void glVertex2f(GLfloat x, GLfloat y)<br>
+</UL>
+<p><A NAME="vertex2fv">
+<strong> vertex2fv({V1,V2})  </strong><UL>Args: {V1,V2}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertex.html">C-API:</a> void glVertex2fv( const GLfloat * v)<br>
+</UL>
+<p><A NAME="vertex2i">
+<strong> vertex2i(X, Y)  </strong><UL>Args: X, Y<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertex.html">C-API:</a> void glVertex2i(GLint x, GLint y)<br>
+</UL>
+<p><A NAME="vertex2iv">
+<strong> vertex2iv({V1,V2})  </strong><UL>Args: {V1,V2}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertex.html">C-API:</a> void glVertex2iv( const GLint * v)<br>
+</UL>
+<p><A NAME="vertex2s">
+<strong> vertex2s(X, Y)  </strong><UL>Args: X, Y<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertex.html">C-API:</a> void glVertex2s(GLshort x, GLshort y)<br>
+</UL>
+<p><A NAME="vertex2sv">
+<strong> vertex2sv({V1,V2})  </strong><UL>Args: {V1,V2}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertex.html">C-API:</a> void glVertex2sv( const GLshort * v)<br>
+</UL>
+<p><A NAME="vertex3d">
+<strong> vertex3d(X, Y, Z)  </strong><UL>Args: X, Y, Z<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertex.html">C-API:</a> void glVertex3d(GLdouble x, GLdouble y, GLdouble z)<br>
+</UL>
+<p><A NAME="vertex3dv">
+<strong> vertex3dv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertex.html">C-API:</a> void glVertex3dv( const GLdouble * v)<br>
+</UL>
+<p><A NAME="vertex3f">
+<strong> vertex3f(X, Y, Z)  </strong><UL>Args: X, Y, Z<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertex.html">C-API:</a> void glVertex3f(GLfloat x, GLfloat y, GLfloat z)<br>
+</UL>
+<p><A NAME="vertex3fv">
+<strong> vertex3fv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertex.html">C-API:</a> void glVertex3fv( const GLfloat * v)<br>
+</UL>
+<p><A NAME="vertex3i">
+<strong> vertex3i(X, Y, Z)  </strong><UL>Args: X, Y, Z<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertex.html">C-API:</a> void glVertex3i(GLint x, GLint y, GLint z)<br>
+</UL>
+<p><A NAME="vertex3iv">
+<strong> vertex3iv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertex.html">C-API:</a> void glVertex3iv( const GLint * v)<br>
+</UL>
+<p><A NAME="vertex3s">
+<strong> vertex3s(X, Y, Z)  </strong><UL>Args: X, Y, Z<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertex.html">C-API:</a> void glVertex3s(GLshort x, GLshort y, GLshort z)<br>
+</UL>
+<p><A NAME="vertex3sv">
+<strong> vertex3sv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertex.html">C-API:</a> void glVertex3sv( const GLshort * v)<br>
+</UL>
+<p><A NAME="vertex4d">
+<strong> vertex4d(X, Y, Z, W)  </strong><UL>Args: X, Y, Z, W<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertex.html">C-API:</a> void glVertex4d(GLdouble x, GLdouble y, GLdouble z, GLdouble w)<br>
+</UL>
+<p><A NAME="vertex4dv">
+<strong> vertex4dv({V1,V2,V3,V4})  </strong><UL>Args: {V1,V2,V3,V4}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertex.html">C-API:</a> void glVertex4dv( const GLdouble * v)<br>
+</UL>
+<p><A NAME="vertex4f">
+<strong> vertex4f(X, Y, Z, W)  </strong><UL>Args: X, Y, Z, W<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertex.html">C-API:</a> void glVertex4f(GLfloat x, GLfloat y, GLfloat z, GLfloat w)<br>
+</UL>
+<p><A NAME="vertex4fv">
+<strong> vertex4fv({V1,V2,V3,V4})  </strong><UL>Args: {V1,V2,V3,V4}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertex.html">C-API:</a> void glVertex4fv( const GLfloat * v)<br>
+</UL>
+<p><A NAME="vertex4i">
+<strong> vertex4i(X, Y, Z, W)  </strong><UL>Args: X, Y, Z, W<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertex.html">C-API:</a> void glVertex4i(GLint x, GLint y, GLint z, GLint w)<br>
+</UL>
+<p><A NAME="vertex4iv">
+<strong> vertex4iv({V1,V2,V3,V4})  </strong><UL>Args: {V1,V2,V3,V4}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertex.html">C-API:</a> void glVertex4iv( const GLint * v)<br>
+</UL>
+<p><A NAME="vertex4s">
+<strong> vertex4s(X, Y, Z, W)  </strong><UL>Args: X, Y, Z, W<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertex.html">C-API:</a> void glVertex4s(GLshort x, GLshort y, GLshort z, GLshort w)<br>
+</UL>
+<p><A NAME="vertex4sv">
+<strong> vertex4sv({V1,V2,V3,V4})  </strong><UL>Args: {V1,V2,V3,V4}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertex.html">C-API:</a> void glVertex4sv( const GLshort * v)<br>
+</UL>
+<p><A NAME="vertexPointer">
+<strong> vertexPointer(Size, Type, Stride, Pointer)  </strong><UL>Args: Size, Type, Stride, <<[Pointer]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexPointer.html">C-API:</a> void glVertexPointer(GLint size, GLenum type, GLsizei stride,  const GLvoid * pointer)<br>
+</UL>
+<p><A NAME="viewport">
+<strong> viewport(X, Y, Width, Height)  </strong><UL>Args: X, Y, Width, Height<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glViewport.html">C-API:</a> void glViewport(GLint x, GLint y, GLsizei width, GLsizei height)<br>
+</UL>
+<p><A NAME="blendColor">
+<strong> blendColor(Red, Green, Blue, Alpha)  </strong><UL>Args: Red, Green, Blue, Alpha<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glBlendColor.html">C-API:</a> void glBlendColor(GLclampf red, GLclampf green, GLclampf blue, GLclampf alpha)<br>
+</UL>
+<p><A NAME="blendEquation">
+<strong> blendEquation(Mode)  </strong><UL>Args: Mode<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glBlendEquation.html">C-API:</a> void glBlendEquation(GLenum mode)<br>
+</UL>
+<p><A NAME="drawRangeElements">
+<strong> drawRangeElements(Mode, Start, End, Count, Type, Indices)  </strong><UL>Args: Mode, Start, End, Count, Type, <<[Indices]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glDrawRangeElements.html">C-API:</a> void glDrawRangeElements(GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type,  const GLvoid * indices)<br>
+</UL>
+<p><A NAME="colorTable">
+<strong> colorTable(Target, Internalformat, Width, Format, Type, Table)  </strong><UL>Args: Target, Internalformat, Width, Format, Type, <<[Table]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColorTable.html">C-API:</a> void glColorTable(GLenum target, GLenum internalformat, GLsizei width, GLenum format, GLenum type,  const GLvoid * table)<br>
+</UL>
+<p><A NAME="colorTableParameterfv">
+<strong> colorTableParameterfv(Target, Pname, Params)  </strong><UL>Args: Target, Pname, <<[Params]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColorTableParameter.html">C-API:</a> void glColorTableParameterfv(GLenum target, GLenum pname,  const GLfloat * params)<br>
+</UL>
+<p><A NAME="colorTableParameteriv">
+<strong> colorTableParameteriv(Target, Pname, Params)  </strong><UL>Args: Target, Pname, <<[Params]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColorTableParameter.html">C-API:</a> void glColorTableParameteriv(GLenum target, GLenum pname,  const GLint * params)<br>
+</UL>
+<p><A NAME="copyColorTable">
+<strong> copyColorTable(Target, Internalformat, X, Y, Width)  </strong><UL>Args: Target, Internalformat, X, Y, Width<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glCopyColorTable.html">C-API:</a> void glCopyColorTable(GLenum target, GLenum internalformat, GLint x, GLint y, GLsizei width)<br>
+</UL>
+<p><A NAME="getColorTable">
+<strong> getColorTable(Target, Format, Type, #sdlmem{bin=Table})  </strong><UL>Args: Target, Format, Type, #sdlmem{} = Table<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetColorTable.html">C-API:</a> void glGetColorTable(GLenum target, GLenum format, GLenum type, GLvoid * table)<br>
+</UL>
+<p><A NAME="getColorTableParameterfv">
+<strong> getColorTableParameterfv(Target, Pname)  </strong><UL>Args: Target, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetColorTableParameter.html">C-API:</a> void glGetColorTableParameterfv(GLenum target, GLenum pname, GLfloat * params)<br>
+</UL>
+<p><A NAME="getColorTableParameteriv">
+<strong> getColorTableParameteriv(Target, Pname)  </strong><UL>Args: Target, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetColorTableParameter.html">C-API:</a> void glGetColorTableParameteriv(GLenum target, GLenum pname, GLint * params)<br>
+</UL>
+<p><A NAME="colorSubTable">
+<strong> colorSubTable(Target, Start, Count, Format, Type, Data)  </strong><UL>Args: Target, Start, Count, Format, Type, <<[Data]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glColorSubTable.html">C-API:</a> void glColorSubTable(GLenum target, GLsizei start, GLsizei count, GLenum format, GLenum type,  const GLvoid * data)<br>
+</UL>
+<p><A NAME="copyColorSubTable">
+<strong> copyColorSubTable(Target, Start, X, Y, Width)  </strong><UL>Args: Target, Start, X, Y, Width<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glCopyColorSubTable.html">C-API:</a> void glCopyColorSubTable(GLenum target, GLsizei start, GLint x, GLint y, GLsizei width)<br>
+</UL>
+<p><A NAME="convolutionFilter1D">
+<strong> convolutionFilter1D(Target, Internalformat, Width, Format, Type, Image)  </strong><UL>Args: Target, Internalformat, Width, Format, Type, <<[Image]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glConvolutionFilter1D.html">C-API:</a> void glConvolutionFilter1D(GLenum target, GLenum internalformat, GLsizei width, GLenum format, GLenum type,  const GLvoid * image)<br>
+</UL>
+<p><A NAME="convolutionFilter2D">
+<strong> convolutionFilter2D(Target, Internalformat, Width, Height, Format, Type, Image)  </strong><UL>Args: Target, Internalformat, Width, Height, Format, Type, <<[Image]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glConvolutionFilter2D.html">C-API:</a> void glConvolutionFilter2D(GLenum target, GLenum internalformat, GLsizei width, GLsizei height, GLenum format, GLenum type,  const GLvoid * image)<br>
+</UL>
+<p><A NAME="convolutionParameterf">
+<strong> convolutionParameterf(Target, Pname, Params)  </strong><UL>Args: Target, Pname, Params<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glConvolutionParameterf.html">C-API:</a> void glConvolutionParameterf(GLenum target, GLenum pname, GLfloat params)<br>
+</UL>
+<p><A NAME="convolutionParameterfv">
+<strong> convolutionParameterfv(Target, Pname, Params)  </strong><UL>Args: Target, Pname, <<[Params]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glConvolutionParameter.html">C-API:</a> void glConvolutionParameterfv(GLenum target, GLenum pname,  const GLfloat * params)<br>
+</UL>
+<p><A NAME="convolutionParameteri">
+<strong> convolutionParameteri(Target, Pname, Params)  </strong><UL>Args: Target, Pname, Params<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glConvolutionParameteri.html">C-API:</a> void glConvolutionParameteri(GLenum target, GLenum pname, GLint params)<br>
+</UL>
+<p><A NAME="convolutionParameteriv">
+<strong> convolutionParameteriv(Target, Pname, Params)  </strong><UL>Args: Target, Pname, <<[Params]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glConvolutionParameter.html">C-API:</a> void glConvolutionParameteriv(GLenum target, GLenum pname,  const GLint * params)<br>
+</UL>
+<p><A NAME="copyConvolutionFilter1D">
+<strong> copyConvolutionFilter1D(Target, Internalformat, X, Y, Width)  </strong><UL>Args: Target, Internalformat, X, Y, Width<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glCopyConvolutionFilter1D.html">C-API:</a> void glCopyConvolutionFilter1D(GLenum target, GLenum internalformat, GLint x, GLint y, GLsizei width)<br>
+</UL>
+<p><A NAME="copyConvolutionFilter2D">
+<strong> copyConvolutionFilter2D(Target, Internalformat, X, Y, Width, Height)  </strong><UL>Args: Target, Internalformat, X, Y, Width, Height<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glCopyConvolutionFilter2D.html">C-API:</a> void glCopyConvolutionFilter2D(GLenum target, GLenum internalformat, GLint x, GLint y, GLsizei width, GLsizei height)<br>
+</UL>
+<p><A NAME="getConvolutionFilter">
+<strong> getConvolutionFilter(Target, Format, Type, #sdlmem{bin=Image})  </strong><UL>Args: Target, Format, Type, #sdlmem{} = Image<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetConvolutionFilter.html">C-API:</a> void glGetConvolutionFilter(GLenum target, GLenum format, GLenum type, GLvoid * image)<br>
+</UL>
+<p><A NAME="getConvolutionParameterfv">
+<strong> getConvolutionParameterfv(Target, Pname)  </strong><UL>Args: Target, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetConvolutionParameter.html">C-API:</a> void glGetConvolutionParameterfv(GLenum target, GLenum pname, GLfloat * params)<br>
+</UL>
+<p><A NAME="getConvolutionParameteriv">
+<strong> getConvolutionParameteriv(Target, Pname)  </strong><UL>Args: Target, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetConvolutionParameter.html">C-API:</a> void glGetConvolutionParameteriv(GLenum target, GLenum pname, GLint * params)<br>
+</UL>
+<p><A NAME="getSeparableFilter">
+<strong> getSeparableFilter(Target, Format, Type, #sdlmem{bin=Row}, #sdlmem{bin=Column}, #sdlmem{bin=Span})  </strong><UL>Args: Target, Format, Type, #sdlmem{} = Row, #sdlmem{} = Column, #sdlmem{} = Span<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetSeparableFilter.html">C-API:</a> void glGetSeparableFilter(GLenum target, GLenum format, GLenum type, GLvoid * row, GLvoid * column, GLvoid * span)<br>
+</UL>
+<p><A NAME="separableFilter2D">
+<strong> separableFilter2D(Target, Internalformat, Width, Height, Format, Type, Row, Column)  </strong><UL>Args: Target, Internalformat, Width, Height, Format, Type, <<[Row]>>, <<[Column]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glSeparableFilter2D.html">C-API:</a> void glSeparableFilter2D(GLenum target, GLenum internalformat, GLsizei width, GLsizei height, GLenum format, GLenum type,  const GLvoid * row,  const GLvoid * column)<br>
+</UL>
+<p><A NAME="getHistogram">
+<strong> getHistogram(Target, Reset, Format, Type, #sdlmem{bin=Values})  </strong><UL>Args: Target, Reset, Format, Type, #sdlmem{} = Values<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetHistogram.html">C-API:</a> void glGetHistogram(GLenum target, GLboolean reset, GLenum format, GLenum type, GLvoid * values)<br>
+</UL>
+<p><A NAME="getHistogramParameterfv">
+<strong> getHistogramParameterfv(Target, Pname)  </strong><UL>Args: Target, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetHistogramParameter.html">C-API:</a> void glGetHistogramParameterfv(GLenum target, GLenum pname, GLfloat * params)<br>
+</UL>
+<p><A NAME="getHistogramParameteriv">
+<strong> getHistogramParameteriv(Target, Pname)  </strong><UL>Args: Target, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetHistogramParameter.html">C-API:</a> void glGetHistogramParameteriv(GLenum target, GLenum pname, GLint * params)<br>
+</UL>
+<p><A NAME="getMinmax">
+<strong> getMinmax(Target, Reset, Format, Type, #sdlmem{bin=Values})  </strong><UL>Args: Target, Reset, Format, Type, #sdlmem{} = Values<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetMinmax.html">C-API:</a> void glGetMinmax(GLenum target, GLboolean reset, GLenum format, GLenum type, GLvoid * values)<br>
+</UL>
+<p><A NAME="getMinmaxParameterfv">
+<strong> getMinmaxParameterfv(Target, Pname)  </strong><UL>Args: Target, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetMinmaxParameter.html">C-API:</a> void glGetMinmaxParameterfv(GLenum target, GLenum pname, GLfloat * params)<br>
+</UL>
+<p><A NAME="getMinmaxParameteriv">
+<strong> getMinmaxParameteriv(Target, Pname)  </strong><UL>Args: Target, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetMinmaxParameter.html">C-API:</a> void glGetMinmaxParameteriv(GLenum target, GLenum pname, GLint * params)<br>
+</UL>
+<p><A NAME="histogram">
+<strong> histogram(Target, Width, Internalformat, Sink)  </strong><UL>Args: Target, Width, Internalformat, Sink<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glHistogram.html">C-API:</a> void glHistogram(GLenum target, GLsizei width, GLenum internalformat, GLboolean sink)<br>
+</UL>
+<p><A NAME="minmax">
+<strong> minmax(Target, Internalformat, Sink)  </strong><UL>Args: Target, Internalformat, Sink<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMinmax.html">C-API:</a> void glMinmax(GLenum target, GLenum internalformat, GLboolean sink)<br>
+</UL>
+<p><A NAME="resetHistogram">
+<strong> resetHistogram(Target)  </strong><UL>Args: Target<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glResetHistogram.html">C-API:</a> void glResetHistogram(GLenum target)<br>
+</UL>
+<p><A NAME="resetMinmax">
+<strong> resetMinmax(Target)  </strong><UL>Args: Target<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glResetMinmax.html">C-API:</a> void glResetMinmax(GLenum target)<br>
+</UL>
+<p><A NAME="texImage3D">
+<strong> texImage3D(Target, Level, Internalformat, Width, Height, Depth, Border, Format, Type, Pixels)  </strong><UL>Args: Target, Level, Internalformat, Width, Height, Depth, Border, Format, Type, <<[Pixels]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexImage3D.html">C-API:</a> void glTexImage3D(GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLenum format, GLenum type,  const GLvoid * pixels)<br>
+</UL>
+<p><A NAME="texSubImage3D">
+<strong> texSubImage3D(Target, Level, Xoffset, Yoffset, Zoffset, Width, Height, Depth, Format, Type, Pixels)  </strong><UL>Args: Target, Level, Xoffset, Yoffset, Zoffset, Width, Height, Depth, Format, Type, <<[Pixels]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glTexSubImage3D.html">C-API:</a> void glTexSubImage3D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type,  const GLvoid * pixels)<br>
+</UL>
+<p><A NAME="copyTexSubImage3D">
+<strong> copyTexSubImage3D(Target, Level, Xoffset, Yoffset, Zoffset, X, Y, Width, Height)  </strong><UL>Args: Target, Level, Xoffset, Yoffset, Zoffset, X, Y, Width, Height<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glCopyTexSubImage3D.html">C-API:</a> void glCopyTexSubImage3D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint x, GLint y, GLsizei width, GLsizei height)<br>
+</UL>
+<p><A NAME="activeTexture">
+<strong> activeTexture(Texture)  </strong><UL>Args: Texture<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glActiveTexture.html">C-API:</a> void glActiveTexture(GLenum texture)<br>
+</UL>
+<p><A NAME="clientActiveTexture">
+<strong> clientActiveTexture(Texture)  </strong><UL>Args: Texture<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glClientActiveTexture.html">C-API:</a> void glClientActiveTexture(GLenum texture)<br>
+</UL>
+<p><A NAME="multiTexCoord1d">
+<strong> multiTexCoord1d(Target, S)  </strong><UL>Args: Target, S<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultiTexCoord.html">C-API:</a> void glMultiTexCoord1d(GLenum target, GLdouble s)<br>
+</UL>
+<p><A NAME="multiTexCoord1dv">
+<strong> multiTexCoord1dv(Target, {V1})  </strong><UL>Args: Target, {V1}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultiTexCoord.html">C-API:</a> void glMultiTexCoord1dv(GLenum target,  const GLdouble * v)<br>
+</UL>
+<p><A NAME="multiTexCoord1f">
+<strong> multiTexCoord1f(Target, S)  </strong><UL>Args: Target, S<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultiTexCoord.html">C-API:</a> void glMultiTexCoord1f(GLenum target, GLfloat s)<br>
+</UL>
+<p><A NAME="multiTexCoord1fv">
+<strong> multiTexCoord1fv(Target, {V1})  </strong><UL>Args: Target, {V1}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultiTexCoord.html">C-API:</a> void glMultiTexCoord1fv(GLenum target,  const GLfloat * v)<br>
+</UL>
+<p><A NAME="multiTexCoord1i">
+<strong> multiTexCoord1i(Target, S)  </strong><UL>Args: Target, S<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultiTexCoord.html">C-API:</a> void glMultiTexCoord1i(GLenum target, GLint s)<br>
+</UL>
+<p><A NAME="multiTexCoord1iv">
+<strong> multiTexCoord1iv(Target, {V1})  </strong><UL>Args: Target, {V1}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultiTexCoord.html">C-API:</a> void glMultiTexCoord1iv(GLenum target,  const GLint * v)<br>
+</UL>
+<p><A NAME="multiTexCoord1s">
+<strong> multiTexCoord1s(Target, S)  </strong><UL>Args: Target, S<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultiTexCoord.html">C-API:</a> void glMultiTexCoord1s(GLenum target, GLshort s)<br>
+</UL>
+<p><A NAME="multiTexCoord1sv">
+<strong> multiTexCoord1sv(Target, {V1})  </strong><UL>Args: Target, {V1}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultiTexCoord.html">C-API:</a> void glMultiTexCoord1sv(GLenum target,  const GLshort * v)<br>
+</UL>
+<p><A NAME="multiTexCoord2d">
+<strong> multiTexCoord2d(Target, S, T)  </strong><UL>Args: Target, S, T<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultiTexCoord.html">C-API:</a> void glMultiTexCoord2d(GLenum target, GLdouble s, GLdouble t)<br>
+</UL>
+<p><A NAME="multiTexCoord2dv">
+<strong> multiTexCoord2dv(Target, {V1,V2})  </strong><UL>Args: Target, {V1,V2}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultiTexCoord.html">C-API:</a> void glMultiTexCoord2dv(GLenum target,  const GLdouble * v)<br>
+</UL>
+<p><A NAME="multiTexCoord2f">
+<strong> multiTexCoord2f(Target, S, T)  </strong><UL>Args: Target, S, T<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultiTexCoord.html">C-API:</a> void glMultiTexCoord2f(GLenum target, GLfloat s, GLfloat t)<br>
+</UL>
+<p><A NAME="multiTexCoord2fv">
+<strong> multiTexCoord2fv(Target, {V1,V2})  </strong><UL>Args: Target, {V1,V2}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultiTexCoord.html">C-API:</a> void glMultiTexCoord2fv(GLenum target,  const GLfloat * v)<br>
+</UL>
+<p><A NAME="multiTexCoord2i">
+<strong> multiTexCoord2i(Target, S, T)  </strong><UL>Args: Target, S, T<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultiTexCoord.html">C-API:</a> void glMultiTexCoord2i(GLenum target, GLint s, GLint t)<br>
+</UL>
+<p><A NAME="multiTexCoord2iv">
+<strong> multiTexCoord2iv(Target, {V1,V2})  </strong><UL>Args: Target, {V1,V2}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultiTexCoord.html">C-API:</a> void glMultiTexCoord2iv(GLenum target,  const GLint * v)<br>
+</UL>
+<p><A NAME="multiTexCoord2s">
+<strong> multiTexCoord2s(Target, S, T)  </strong><UL>Args: Target, S, T<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultiTexCoord.html">C-API:</a> void glMultiTexCoord2s(GLenum target, GLshort s, GLshort t)<br>
+</UL>
+<p><A NAME="multiTexCoord2sv">
+<strong> multiTexCoord2sv(Target, {V1,V2})  </strong><UL>Args: Target, {V1,V2}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultiTexCoord.html">C-API:</a> void glMultiTexCoord2sv(GLenum target,  const GLshort * v)<br>
+</UL>
+<p><A NAME="multiTexCoord3d">
+<strong> multiTexCoord3d(Target, S, T, R)  </strong><UL>Args: Target, S, T, R<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultiTexCoord.html">C-API:</a> void glMultiTexCoord3d(GLenum target, GLdouble s, GLdouble t, GLdouble r)<br>
+</UL>
+<p><A NAME="multiTexCoord3dv">
+<strong> multiTexCoord3dv(Target, {V1,V2,V3})  </strong><UL>Args: Target, {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultiTexCoord.html">C-API:</a> void glMultiTexCoord3dv(GLenum target,  const GLdouble * v)<br>
+</UL>
+<p><A NAME="multiTexCoord3f">
+<strong> multiTexCoord3f(Target, S, T, R)  </strong><UL>Args: Target, S, T, R<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultiTexCoord.html">C-API:</a> void glMultiTexCoord3f(GLenum target, GLfloat s, GLfloat t, GLfloat r)<br>
+</UL>
+<p><A NAME="multiTexCoord3fv">
+<strong> multiTexCoord3fv(Target, {V1,V2,V3})  </strong><UL>Args: Target, {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultiTexCoord.html">C-API:</a> void glMultiTexCoord3fv(GLenum target,  const GLfloat * v)<br>
+</UL>
+<p><A NAME="multiTexCoord3i">
+<strong> multiTexCoord3i(Target, S, T, R)  </strong><UL>Args: Target, S, T, R<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultiTexCoord.html">C-API:</a> void glMultiTexCoord3i(GLenum target, GLint s, GLint t, GLint r)<br>
+</UL>
+<p><A NAME="multiTexCoord3iv">
+<strong> multiTexCoord3iv(Target, {V1,V2,V3})  </strong><UL>Args: Target, {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultiTexCoord.html">C-API:</a> void glMultiTexCoord3iv(GLenum target,  const GLint * v)<br>
+</UL>
+<p><A NAME="multiTexCoord3s">
+<strong> multiTexCoord3s(Target, S, T, R)  </strong><UL>Args: Target, S, T, R<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultiTexCoord.html">C-API:</a> void glMultiTexCoord3s(GLenum target, GLshort s, GLshort t, GLshort r)<br>
+</UL>
+<p><A NAME="multiTexCoord3sv">
+<strong> multiTexCoord3sv(Target, {V1,V2,V3})  </strong><UL>Args: Target, {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultiTexCoord.html">C-API:</a> void glMultiTexCoord3sv(GLenum target,  const GLshort * v)<br>
+</UL>
+<p><A NAME="multiTexCoord4d">
+<strong> multiTexCoord4d(Target, S, T, R, Q)  </strong><UL>Args: Target, S, T, R, Q<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultiTexCoord.html">C-API:</a> void glMultiTexCoord4d(GLenum target, GLdouble s, GLdouble t, GLdouble r, GLdouble q)<br>
+</UL>
+<p><A NAME="multiTexCoord4dv">
+<strong> multiTexCoord4dv(Target, {V1,V2,V3,V4})  </strong><UL>Args: Target, {V1,V2,V3,V4}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultiTexCoord.html">C-API:</a> void glMultiTexCoord4dv(GLenum target,  const GLdouble * v)<br>
+</UL>
+<p><A NAME="multiTexCoord4f">
+<strong> multiTexCoord4f(Target, S, T, R, Q)  </strong><UL>Args: Target, S, T, R, Q<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultiTexCoord.html">C-API:</a> void glMultiTexCoord4f(GLenum target, GLfloat s, GLfloat t, GLfloat r, GLfloat q)<br>
+</UL>
+<p><A NAME="multiTexCoord4fv">
+<strong> multiTexCoord4fv(Target, {V1,V2,V3,V4})  </strong><UL>Args: Target, {V1,V2,V3,V4}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultiTexCoord.html">C-API:</a> void glMultiTexCoord4fv(GLenum target,  const GLfloat * v)<br>
+</UL>
+<p><A NAME="multiTexCoord4i">
+<strong> multiTexCoord4i(Target, S, T, R, Q)  </strong><UL>Args: Target, S, T, R, Q<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultiTexCoord.html">C-API:</a> void glMultiTexCoord4i(GLenum target, GLint s, GLint t, GLint r, GLint q)<br>
+</UL>
+<p><A NAME="multiTexCoord4iv">
+<strong> multiTexCoord4iv(Target, {V1,V2,V3,V4})  </strong><UL>Args: Target, {V1,V2,V3,V4}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultiTexCoord.html">C-API:</a> void glMultiTexCoord4iv(GLenum target,  const GLint * v)<br>
+</UL>
+<p><A NAME="multiTexCoord4s">
+<strong> multiTexCoord4s(Target, S, T, R, Q)  </strong><UL>Args: Target, S, T, R, Q<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultiTexCoord.html">C-API:</a> void glMultiTexCoord4s(GLenum target, GLshort s, GLshort t, GLshort r, GLshort q)<br>
+</UL>
+<p><A NAME="multiTexCoord4sv">
+<strong> multiTexCoord4sv(Target, {V1,V2,V3,V4})  </strong><UL>Args: Target, {V1,V2,V3,V4}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultiTexCoord.html">C-API:</a> void glMultiTexCoord4sv(GLenum target,  const GLshort * v)<br>
+</UL>
+<p><A NAME="loadTransposeMatrixf">
+<strong> loadTransposeMatrixf(M)  </strong><UL>Args: <<[M]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glLoadTransposeMatrixf.html">C-API:</a> void glLoadTransposeMatrixf( const GLfloat * m)<br>
+</UL>
+<p><A NAME="loadTransposeMatrixd">
+<strong> loadTransposeMatrixd(M)  </strong><UL>Args: <<[M]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glLoadTransposeMatrixd.html">C-API:</a> void glLoadTransposeMatrixd( const GLdouble * m)<br>
+</UL>
+<p><A NAME="multTransposeMatrixf">
+<strong> multTransposeMatrixf(M)  </strong><UL>Args: <<[M]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultTransposeMatrixf.html">C-API:</a> void glMultTransposeMatrixf( const GLfloat * m)<br>
+</UL>
+<p><A NAME="multTransposeMatrixd">
+<strong> multTransposeMatrixd(M)  </strong><UL>Args: <<[M]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultTransposeMatrixd.html">C-API:</a> void glMultTransposeMatrixd( const GLdouble * m)<br>
+</UL>
+<p><A NAME="sampleCoverage">
+<strong> sampleCoverage(Value, Invert)  </strong><UL>Args: Value, Invert<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glSampleCoverage.html">C-API:</a> void glSampleCoverage(GLclampf value, GLboolean invert)<br>
+</UL>
+<p><A NAME="compressedTexImage3D">
+<strong> compressedTexImage3D(Target, Level, Internalformat, Width, Height, Depth, Border, ImageSize, Data)  </strong><UL>Args: Target, Level, Internalformat, Width, Height, Depth, Border, ImageSize, <<[Data]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glCompressedTexImage3D.html">C-API:</a> void glCompressedTexImage3D(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLsizei imageSize,  const GLvoid * data)<br>
+</UL>
+<p><A NAME="compressedTexImage2D">
+<strong> compressedTexImage2D(Target, Level, Internalformat, Width, Height, Border, ImageSize, Data)  </strong><UL>Args: Target, Level, Internalformat, Width, Height, Border, ImageSize, <<[Data]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glCompressedTexImage2D.html">C-API:</a> void glCompressedTexImage2D(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLsizei imageSize,  const GLvoid * data)<br>
+</UL>
+<p><A NAME="compressedTexImage1D">
+<strong> compressedTexImage1D(Target, Level, Internalformat, Width, Border, ImageSize, Data)  </strong><UL>Args: Target, Level, Internalformat, Width, Border, ImageSize, <<[Data]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glCompressedTexImage1D.html">C-API:</a> void glCompressedTexImage1D(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLint border, GLsizei imageSize,  const GLvoid * data)<br>
+</UL>
+<p><A NAME="compressedTexSubImage3D">
+<strong> compressedTexSubImage3D(Target, Level, Xoffset, Yoffset, Zoffset, Width, Height, Depth, Format, ImageSize, Data)  </strong><UL>Args: Target, Level, Xoffset, Yoffset, Zoffset, Width, Height, Depth, Format, ImageSize, <<[Data]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glCompressedTexSubImage3D.html">C-API:</a> void glCompressedTexSubImage3D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize,  const GLvoid * data)<br>
+</UL>
+<p><A NAME="compressedTexSubImage2D">
+<strong> compressedTexSubImage2D(Target, Level, Xoffset, Yoffset, Width, Height, Format, ImageSize, Data)  </strong><UL>Args: Target, Level, Xoffset, Yoffset, Width, Height, Format, ImageSize, <<[Data]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glCompressedTexSubImage2D.html">C-API:</a> void glCompressedTexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize,  const GLvoid * data)<br>
+</UL>
+<p><A NAME="compressedTexSubImage1D">
+<strong> compressedTexSubImage1D(Target, Level, Xoffset, Width, Format, ImageSize, Data)  </strong><UL>Args: Target, Level, Xoffset, Width, Format, ImageSize, <<[Data]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glCompressedTexSubImage1D.html">C-API:</a> void glCompressedTexSubImage1D(GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize,  const GLvoid * data)<br>
+</UL>
+<p><A NAME="getCompressedTexImage">
+<strong> getCompressedTexImage(Target, Level, #sdlmem{bin=Img})  </strong><UL>Args: Target, Level, #sdlmem{} = Img<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetCompressedTexImage.html">C-API:</a> void glGetCompressedTexImage(GLenum target, GLint level, GLvoid * img)<br>
+</UL>
+<p><A NAME="blendFuncSeparate">
+<strong> blendFuncSeparate(SfactorRGB, DfactorRGB, SfactorAlpha, DfactorAlpha)  </strong><UL>Args: SfactorRGB, DfactorRGB, SfactorAlpha, DfactorAlpha<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glBlendFuncSeparate.html">C-API:</a> void glBlendFuncSeparate(GLenum sfactorRGB, GLenum dfactorRGB, GLenum sfactorAlpha, GLenum dfactorAlpha)<br>
+</UL>
+<p><A NAME="fogCoordf">
+<strong> fogCoordf(Coord)  </strong><UL>Args: Coord<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glFogCoordf.html">C-API:</a> void glFogCoordf(GLfloat coord)<br>
+</UL>
+<p><A NAME="fogCoordfv">
+<strong> fogCoordfv(Coord)  </strong><UL>Args: <<[Coord]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glFogCoord.html">C-API:</a> void glFogCoordfv( const GLfloat * coord)<br>
+</UL>
+<p><A NAME="fogCoordd">
+<strong> fogCoordd(Coord)  </strong><UL>Args: Coord<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glFogCoordd.html">C-API:</a> void glFogCoordd(GLdouble coord)<br>
+</UL>
+<p><A NAME="fogCoorddv">
+<strong> fogCoorddv(Coord)  </strong><UL>Args: <<[Coord]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glFogCoord.html">C-API:</a> void glFogCoorddv( const GLdouble * coord)<br>
+</UL>
+<p><A NAME="fogCoordPointer">
+<strong> fogCoordPointer(Type, Stride, Pointer)  </strong><UL>Args: Type, Stride, <<[Pointer]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glFogCoordPointer.html">C-API:</a> void glFogCoordPointer(GLenum type, GLsizei stride,  const GLvoid * pointer)<br>
+</UL>
+<p><A NAME="multiDrawArrays">
+<strong> multiDrawArrays(Mode, First, Count, Primcount)  </strong><UL>Args: Mode, <<[First]>>, <<[Count]>>, Primcount<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMultiDrawArrays.html">C-API:</a> void glMultiDrawArrays(GLenum mode,  const GLint * first,  const GLsizei * count, GLsizei primcount)<br>
+</UL>
+<p><A NAME="pointParameterf">
+<strong> pointParameterf(Pname, Param)  </strong><UL>Args: Pname, Param<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glPointParameterf.html">C-API:</a> void glPointParameterf(GLenum pname, GLfloat param)<br>
+</UL>
+<p><A NAME="pointParameterfv">
+<strong> pointParameterfv(Pname, Params)  </strong><UL>Args: Pname, <<[Params]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glPointParameter.html">C-API:</a> void glPointParameterfv(GLenum pname,  const GLfloat * params)<br>
+</UL>
+<p><A NAME="pointParameteri">
+<strong> pointParameteri(Pname, Param)  </strong><UL>Args: Pname, Param<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glPointParameteri.html">C-API:</a> void glPointParameteri(GLenum pname, GLint param)<br>
+</UL>
+<p><A NAME="pointParameteriv">
+<strong> pointParameteriv(Pname, Params)  </strong><UL>Args: Pname, <<[Params]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glPointParameter.html">C-API:</a> void glPointParameteriv(GLenum pname,  const GLint * params)<br>
+</UL>
+<p><A NAME="secondaryColor3b">
+<strong> secondaryColor3b(Red, Green, Blue)  </strong><UL>Args: Red, Green, Blue<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glSecondaryColor.html">C-API:</a> void glSecondaryColor3b(GLbyte red, GLbyte green, GLbyte blue)<br>
+</UL>
+<p><A NAME="secondaryColor3bv">
+<strong> secondaryColor3bv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glSecondaryColor.html">C-API:</a> void glSecondaryColor3bv( const GLbyte * v)<br>
+</UL>
+<p><A NAME="secondaryColor3d">
+<strong> secondaryColor3d(Red, Green, Blue)  </strong><UL>Args: Red, Green, Blue<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glSecondaryColor.html">C-API:</a> void glSecondaryColor3d(GLdouble red, GLdouble green, GLdouble blue)<br>
+</UL>
+<p><A NAME="secondaryColor3dv">
+<strong> secondaryColor3dv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glSecondaryColor.html">C-API:</a> void glSecondaryColor3dv( const GLdouble * v)<br>
+</UL>
+<p><A NAME="secondaryColor3f">
+<strong> secondaryColor3f(Red, Green, Blue)  </strong><UL>Args: Red, Green, Blue<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glSecondaryColor.html">C-API:</a> void glSecondaryColor3f(GLfloat red, GLfloat green, GLfloat blue)<br>
+</UL>
+<p><A NAME="secondaryColor3fv">
+<strong> secondaryColor3fv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glSecondaryColor.html">C-API:</a> void glSecondaryColor3fv( const GLfloat * v)<br>
+</UL>
+<p><A NAME="secondaryColor3i">
+<strong> secondaryColor3i(Red, Green, Blue)  </strong><UL>Args: Red, Green, Blue<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glSecondaryColor.html">C-API:</a> void glSecondaryColor3i(GLint red, GLint green, GLint blue)<br>
+</UL>
+<p><A NAME="secondaryColor3iv">
+<strong> secondaryColor3iv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glSecondaryColor.html">C-API:</a> void glSecondaryColor3iv( const GLint * v)<br>
+</UL>
+<p><A NAME="secondaryColor3s">
+<strong> secondaryColor3s(Red, Green, Blue)  </strong><UL>Args: Red, Green, Blue<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glSecondaryColor.html">C-API:</a> void glSecondaryColor3s(GLshort red, GLshort green, GLshort blue)<br>
+</UL>
+<p><A NAME="secondaryColor3sv">
+<strong> secondaryColor3sv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glSecondaryColor.html">C-API:</a> void glSecondaryColor3sv( const GLshort * v)<br>
+</UL>
+<p><A NAME="secondaryColor3ub">
+<strong> secondaryColor3ub(Red, Green, Blue)  </strong><UL>Args: Red, Green, Blue<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glSecondaryColor.html">C-API:</a> void glSecondaryColor3ub(GLubyte red, GLubyte green, GLubyte blue)<br>
+</UL>
+<p><A NAME="secondaryColor3ubv">
+<strong> secondaryColor3ubv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glSecondaryColor.html">C-API:</a> void glSecondaryColor3ubv( const GLubyte * v)<br>
+</UL>
+<p><A NAME="secondaryColor3ui">
+<strong> secondaryColor3ui(Red, Green, Blue)  </strong><UL>Args: Red, Green, Blue<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glSecondaryColor.html">C-API:</a> void glSecondaryColor3ui(GLuint red, GLuint green, GLuint blue)<br>
+</UL>
+<p><A NAME="secondaryColor3uiv">
+<strong> secondaryColor3uiv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glSecondaryColor.html">C-API:</a> void glSecondaryColor3uiv( const GLuint * v)<br>
+</UL>
+<p><A NAME="secondaryColor3us">
+<strong> secondaryColor3us(Red, Green, Blue)  </strong><UL>Args: Red, Green, Blue<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glSecondaryColor.html">C-API:</a> void glSecondaryColor3us(GLushort red, GLushort green, GLushort blue)<br>
+</UL>
+<p><A NAME="secondaryColor3usv">
+<strong> secondaryColor3usv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glSecondaryColor.html">C-API:</a> void glSecondaryColor3usv( const GLushort * v)<br>
+</UL>
+<p><A NAME="secondaryColorPointer">
+<strong> secondaryColorPointer(Size, Type, Stride, Pointer)  </strong><UL>Args: Size, Type, Stride, <<[Pointer]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glSecondaryColorPointer.html">C-API:</a> void glSecondaryColorPointer(GLint size, GLenum type, GLsizei stride,  const GLvoid * pointer)<br>
+</UL>
+<p><A NAME="windowPos2d">
+<strong> windowPos2d(X, Y)  </strong><UL>Args: X, Y<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glWindowPos.html">C-API:</a> void glWindowPos2d(GLdouble x, GLdouble y)<br>
+</UL>
+<p><A NAME="windowPos2dv">
+<strong> windowPos2dv({V1,V2})  </strong><UL>Args: {V1,V2}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glWindowPos.html">C-API:</a> void glWindowPos2dv( const GLdouble * v)<br>
+</UL>
+<p><A NAME="windowPos2f">
+<strong> windowPos2f(X, Y)  </strong><UL>Args: X, Y<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glWindowPos.html">C-API:</a> void glWindowPos2f(GLfloat x, GLfloat y)<br>
+</UL>
+<p><A NAME="windowPos2fv">
+<strong> windowPos2fv({V1,V2})  </strong><UL>Args: {V1,V2}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glWindowPos.html">C-API:</a> void glWindowPos2fv( const GLfloat * v)<br>
+</UL>
+<p><A NAME="windowPos2i">
+<strong> windowPos2i(X, Y)  </strong><UL>Args: X, Y<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glWindowPos.html">C-API:</a> void glWindowPos2i(GLint x, GLint y)<br>
+</UL>
+<p><A NAME="windowPos2iv">
+<strong> windowPos2iv({V1,V2})  </strong><UL>Args: {V1,V2}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glWindowPos.html">C-API:</a> void glWindowPos2iv( const GLint * v)<br>
+</UL>
+<p><A NAME="windowPos2s">
+<strong> windowPos2s(X, Y)  </strong><UL>Args: X, Y<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glWindowPos.html">C-API:</a> void glWindowPos2s(GLshort x, GLshort y)<br>
+</UL>
+<p><A NAME="windowPos2sv">
+<strong> windowPos2sv({V1,V2})  </strong><UL>Args: {V1,V2}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glWindowPos.html">C-API:</a> void glWindowPos2sv( const GLshort * v)<br>
+</UL>
+<p><A NAME="windowPos3d">
+<strong> windowPos3d(X, Y, Z)  </strong><UL>Args: X, Y, Z<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glWindowPos.html">C-API:</a> void glWindowPos3d(GLdouble x, GLdouble y, GLdouble z)<br>
+</UL>
+<p><A NAME="windowPos3dv">
+<strong> windowPos3dv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glWindowPos.html">C-API:</a> void glWindowPos3dv( const GLdouble * v)<br>
+</UL>
+<p><A NAME="windowPos3f">
+<strong> windowPos3f(X, Y, Z)  </strong><UL>Args: X, Y, Z<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glWindowPos.html">C-API:</a> void glWindowPos3f(GLfloat x, GLfloat y, GLfloat z)<br>
+</UL>
+<p><A NAME="windowPos3fv">
+<strong> windowPos3fv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glWindowPos.html">C-API:</a> void glWindowPos3fv( const GLfloat * v)<br>
+</UL>
+<p><A NAME="windowPos3i">
+<strong> windowPos3i(X, Y, Z)  </strong><UL>Args: X, Y, Z<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glWindowPos.html">C-API:</a> void glWindowPos3i(GLint x, GLint y, GLint z)<br>
+</UL>
+<p><A NAME="windowPos3iv">
+<strong> windowPos3iv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glWindowPos.html">C-API:</a> void glWindowPos3iv( const GLint * v)<br>
+</UL>
+<p><A NAME="windowPos3s">
+<strong> windowPos3s(X, Y, Z)  </strong><UL>Args: X, Y, Z<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glWindowPos.html">C-API:</a> void glWindowPos3s(GLshort x, GLshort y, GLshort z)<br>
+</UL>
+<p><A NAME="windowPos3sv">
+<strong> windowPos3sv({V1,V2,V3})  </strong><UL>Args: {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glWindowPos.html">C-API:</a> void glWindowPos3sv( const GLshort * v)<br>
+</UL>
+<p><A NAME="genQueries">
+<strong> genQueries(N)  </strong><UL>Args: N<br>
+Returns: [Ids]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGenQueries.html">C-API:</a> void glGenQueries(GLsizei n, GLuint * ids)<br>
+</UL>
+<p><A NAME="deleteQueries">
+<strong> deleteQueries(N, Ids)  </strong><UL>Args: N, <<[Ids]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glDeleteQueries.html">C-API:</a> void glDeleteQueries(GLsizei n,  const GLuint * ids)<br>
+</UL>
+<p><A NAME="isQuery">
+<strong> isQuery(Id)  </strong><UL>Args: Id<br>
+Returns: ?GL_BYTE<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glIsQuery.html">C-API:</a> GLboolean glIsQuery(GLuint id)<br>
+</UL>
+<p><A NAME="beginQuery">
+<strong> beginQuery(Target, Id)  </strong><UL>Args: Target, Id<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glBeginQuery.html">C-API:</a> void glBeginQuery(GLenum target, GLuint id)<br>
+</UL>
+<p><A NAME="endQuery">
+<strong> endQuery(Target)  </strong><UL>Args: Target<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glEndQuery.html">C-API:</a> void glEndQuery(GLenum target)<br>
+</UL>
+<p><A NAME="getQueryiv">
+<strong> getQueryiv(Target, Pname)  </strong><UL>Args: Target, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetQuery.html">C-API:</a> void glGetQueryiv(GLenum target, GLenum pname, GLint * params)<br>
+</UL>
+<p><A NAME="getQueryObjectiv">
+<strong> getQueryObjectiv(Id, Pname)  </strong><UL>Args: Id, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetQueryObject.html">C-API:</a> void glGetQueryObjectiv(GLuint id, GLenum pname, GLint * params)<br>
+</UL>
+<p><A NAME="getQueryObjectuiv">
+<strong> getQueryObjectuiv(Id, Pname)  </strong><UL>Args: Id, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetQueryObjectu.html">C-API:</a> void glGetQueryObjectuiv(GLuint id, GLenum pname, GLuint * params)<br>
+</UL>
+<p><A NAME="bindBuffer">
+<strong> bindBuffer(Target, Buffer)  </strong><UL>Args: Target, Buffer<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glBindBuffer.html">C-API:</a> void glBindBuffer(GLenum target, GLuint buffer)<br>
+</UL>
+<p><A NAME="deleteBuffers">
+<strong> deleteBuffers(N, Buffers)  </strong><UL>Args: N, <<[Buffers]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glDeleteBuffers.html">C-API:</a> void glDeleteBuffers(GLsizei n,  const GLuint * buffers)<br>
+</UL>
+<p><A NAME="genBuffers">
+<strong> genBuffers(N)  </strong><UL>Args: N<br>
+Returns: [Buffers]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGenBuffers.html">C-API:</a> void glGenBuffers(GLsizei n, GLuint * buffers)<br>
+</UL>
+<p><A NAME="isBuffer">
+<strong> isBuffer(Buffer)  </strong><UL>Args: Buffer<br>
+Returns: ?GL_BYTE<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glIsBuffer.html">C-API:</a> GLboolean glIsBuffer(GLuint buffer)<br>
+</UL>
+<p><A NAME="bufferData">
+<strong> bufferData(Target, Size, Data, Usage)  </strong><UL>Args: Target, Size, <<[Data]>>, Usage<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glBufferData.html">C-API:</a> void glBufferData(GLenum target, GLsizeiptr size,  const GLvoid * data, GLenum usage)<br>
+</UL>
+<p><A NAME="bufferSubData">
+<strong> bufferSubData(Target, Offset, Size, Data)  </strong><UL>Args: Target, Offset, Size, <<[Data]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glBufferSubData.html">C-API:</a> void glBufferSubData(GLenum target, GLintptr offset, GLsizeiptr size,  const GLvoid * data)<br>
+</UL>
+<p><A NAME="getBufferSubData">
+<strong> getBufferSubData(Target, Offset, Size, #sdlmem{bin=Data})  </strong><UL>Args: Target, Offset, Size, #sdlmem{} = Data<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetBufferSubData.html">C-API:</a> void glGetBufferSubData(GLenum target, GLintptr offset, GLsizeiptr size, GLvoid * data)<br>
+</UL>
+<p><A NAME="unmapBuffer">
+<strong> unmapBuffer(Target)  </strong><UL>Args: Target<br>
+Returns: ?GL_BYTE<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glUnmapBuffer.html">C-API:</a> GLboolean glUnmapBuffer(GLenum target)<br>
+</UL>
+<p><A NAME="getBufferParameteriv">
+<strong> getBufferParameteriv(Target, Pname)  </strong><UL>Args: Target, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetBufferParameter.html">C-API:</a> void glGetBufferParameteriv(GLenum target, GLenum pname, GLint * params)<br>
+</UL>
+<p><A NAME="getBufferPointerv">
+<strong> getBufferPointerv(Target, Pname)  </strong><UL>Args: Target, Pname<br>
+Returns: Params=#sdlmem{}<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetBufferPointerv.html">C-API:</a> void glGetBufferPointerv(GLenum target, GLenum pname,  GLvoid* *params)<br>
+</UL>
+<p><A NAME="blendEquationSeparate">
+<strong> blendEquationSeparate(ModeRGB, ModeAlpha)  </strong><UL>Args: ModeRGB, ModeAlpha<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glBlendEquationSeparate.html">C-API:</a> void glBlendEquationSeparate(GLenum modeRGB, GLenum modeAlpha)<br>
+</UL>
+<p><A NAME="drawBuffers">
+<strong> drawBuffers(N, Bufs)  </strong><UL>Args: N, <<[Bufs]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glDrawBuffers.html">C-API:</a> void glDrawBuffers(GLsizei n,  const GLenum * bufs)<br>
+</UL>
+<p><A NAME="stencilOpSeparate">
+<strong> stencilOpSeparate(Face, Sfail, Dpfail, Dppass)  </strong><UL>Args: Face, Sfail, Dpfail, Dppass<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glStencilOpSeparate.html">C-API:</a> void glStencilOpSeparate(GLenum face, GLenum sfail, GLenum dpfail, GLenum dppass)<br>
+</UL>
+<p><A NAME="stencilFuncSeparate">
+<strong> stencilFuncSeparate(Frontfunc, Backfunc, Ref, Mask)  </strong><UL>Args: Frontfunc, Backfunc, Ref, Mask<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glStencilFuncSeparate.html">C-API:</a> void glStencilFuncSeparate(GLenum frontfunc, GLenum backfunc, GLint ref, GLuint mask)<br>
+</UL>
+<p><A NAME="stencilMaskSeparate">
+<strong> stencilMaskSeparate(Face, Mask)  </strong><UL>Args: Face, Mask<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glStencilMaskSeparate.html">C-API:</a> void glStencilMaskSeparate(GLenum face, GLuint mask)<br>
+</UL>
+<p><A NAME="attachShader">
+<strong> attachShader(Program, Shader)  </strong><UL>Args: Program, Shader<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glAttachShader.html">C-API:</a> void glAttachShader(GLuint program, GLuint shader)<br>
+</UL>
+<p><A NAME="bindAttribLocation">
+<strong> bindAttribLocation(Program, Index, Name)  </strong><UL>Args: Program, Index, <<[Name]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glBindAttribLocation.html">C-API:</a> void glBindAttribLocation(GLuint program, GLuint index,  const GLchar * name)<br>
+</UL>
+<p><A NAME="compileShader">
+<strong> compileShader(Shader)  </strong><UL>Args: Shader<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glCompileShader.html">C-API:</a> void glCompileShader(GLuint shader)<br>
+</UL>
+<p><A NAME="createProgram">
+<strong> createProgram()  </strong><UL>Returns: ?GL_UNSIGNED_INT<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glCreateProgram.html">C-API:</a> GLuint glCreateProgram()<br>
+</UL>
+<p><A NAME="createShader">
+<strong> createShader(Type)  </strong><UL>Args: Type<br>
+Returns: ?GL_UNSIGNED_INT<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glCreateShader.html">C-API:</a> GLuint glCreateShader(GLenum type)<br>
+</UL>
+<p><A NAME="deleteProgram">
+<strong> deleteProgram(Program)  </strong><UL>Args: Program<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glDeleteProgram.html">C-API:</a> void glDeleteProgram(GLuint program)<br>
+</UL>
+<p><A NAME="deleteShader">
+<strong> deleteShader(Shader)  </strong><UL>Args: Shader<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glDeleteShader.html">C-API:</a> void glDeleteShader(GLuint shader)<br>
+</UL>
+<p><A NAME="detachShader">
+<strong> detachShader(Program, Shader)  </strong><UL>Args: Program, Shader<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glDetachShader.html">C-API:</a> void glDetachShader(GLuint program, GLuint shader)<br>
+</UL>
+<p><A NAME="disableVertexAttribArray">
+<strong> disableVertexAttribArray(Index)  </strong><UL>Args: Index<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glDisableVertexAttribArray.html">C-API:</a> void glDisableVertexAttribArray(GLuint index)<br>
+</UL>
+<p><A NAME="enableVertexAttribArray">
+<strong> enableVertexAttribArray(Index)  </strong><UL>Args: Index<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glEnableVertexAttribArray.html">C-API:</a> void glEnableVertexAttribArray(GLuint index)<br>
+</UL>
+<p><A NAME="getActiveAttrib">
+<strong> getActiveAttrib(Program, Index, BufSize)  </strong><UL>Args: Program, Index, BufSize<br>
+Returns: {[Length], [Size], [Type], [Name]}<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetActiveAttrib.html">C-API:</a> void glGetActiveAttrib(GLuint program, GLuint index, GLsizei bufSize, GLsizei * length, GLint * size, GLenum * type, GLchar * name)<br>
+</UL>
+<p><A NAME="getActiveUniform">
+<strong> getActiveUniform(Program, Index, BufSize)  </strong><UL>Args: Program, Index, BufSize<br>
+Returns: {[Length], [Size], [Type], [Name]}<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetActiveUniform.html">C-API:</a> void glGetActiveUniform(GLuint program, GLuint index, GLsizei bufSize, GLsizei * length, GLint * size, GLenum * type, GLchar * name)<br>
+</UL>
+<p><A NAME="getAttachedShaders">
+<strong> getAttachedShaders(Program, MaxCount)  </strong><UL>Args: Program, MaxCount<br>
+Returns: {[Count], [Obj]}<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetAttachedShaders.html">C-API:</a> void glGetAttachedShaders(GLuint program, GLsizei maxCount, GLsizei * count, GLuint * obj)<br>
+</UL>
+<p><A NAME="getAttribLocation">
+<strong> getAttribLocation(Program, Name)  </strong><UL>Args: Program, <<[Name]>><br>
+Returns: ?GL_INT<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetAttribLocation.html">C-API:</a> GLint glGetAttribLocation(GLuint program,  const GLchar * name)<br>
+</UL>
+<p><A NAME="getProgramiv">
+<strong> getProgramiv(Program, Pname)  </strong><UL>Args: Program, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetProgram.html">C-API:</a> void glGetProgramiv(GLuint program, GLenum pname, GLint * params)<br>
+</UL>
+<p><A NAME="getProgramInfoLog">
+<strong> getProgramInfoLog(Program, BufSize)  </strong><UL>Args: Program, BufSize<br>
+Returns: {[Length], [InfoLog]}<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetProgramInfoLog.html">C-API:</a> void glGetProgramInfoLog(GLuint program, GLsizei bufSize, GLsizei * length, GLchar * infoLog)<br>
+</UL>
+<p><A NAME="getShaderiv">
+<strong> getShaderiv(Shader, Pname)  </strong><UL>Args: Shader, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetShader.html">C-API:</a> void glGetShaderiv(GLuint shader, GLenum pname, GLint * params)<br>
+</UL>
+<p><A NAME="getShaderInfoLog">
+<strong> getShaderInfoLog(Shader, BufSize)  </strong><UL>Args: Shader, BufSize<br>
+Returns: {[Length], [InfoLog]}<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetShaderInfoLog.html">C-API:</a> void glGetShaderInfoLog(GLuint shader, GLsizei bufSize, GLsizei * length, GLchar * infoLog)<br>
+</UL>
+<p><A NAME="getShaderSource">
+<strong> getShaderSource(Shader, BufSize)  </strong><UL>Args: Shader, BufSize<br>
+Returns: {[Length], [Source]}<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetShaderSource.html">C-API:</a> void glGetShaderSource(GLuint shader, GLsizei bufSize, GLsizei * length, GLchar * source)<br>
+</UL>
+<p><A NAME="getUniformLocation">
+<strong> getUniformLocation(Program, Name)  </strong><UL>Args: Program, <<[Name]>><br>
+Returns: ?GL_INT<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetUniformLocation.html">C-API:</a> GLint glGetUniformLocation(GLuint program,  const GLchar * name)<br>
+</UL>
+<p><A NAME="getUniformfv">
+<strong> getUniformfv(Program, Location, #sdlmem{bin=Params})  </strong><UL>Args: Program, Location, #sdlmem{} = Params<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetUniform.html">C-API:</a> void glGetUniformfv(GLuint program, GLint location, GLfloat * params)<br>
+</UL>
+<p><A NAME="getUniformiv">
+<strong> getUniformiv(Program, Location, #sdlmem{bin=Params})  </strong><UL>Args: Program, Location, #sdlmem{} = Params<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetUniform.html">C-API:</a> void glGetUniformiv(GLuint program, GLint location, GLint * params)<br>
+</UL>
+<p><A NAME="getVertexAttribdv">
+<strong> getVertexAttribdv(Index, Pname)  </strong><UL>Args: Index, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetVertexAttrib.html">C-API:</a> void glGetVertexAttribdv(GLuint index, GLenum pname, GLdouble * params)<br>
+</UL>
+<p><A NAME="getVertexAttribfv">
+<strong> getVertexAttribfv(Index, Pname)  </strong><UL>Args: Index, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetVertexAttrib.html">C-API:</a> void glGetVertexAttribfv(GLuint index, GLenum pname, GLfloat * params)<br>
+</UL>
+<p><A NAME="getVertexAttribiv">
+<strong> getVertexAttribiv(Index, Pname)  </strong><UL>Args: Index, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetVertexAttrib.html">C-API:</a> void glGetVertexAttribiv(GLuint index, GLenum pname, GLint * params)<br>
+</UL>
+<p><A NAME="getVertexAttribPointerv">
+<strong> getVertexAttribPointerv(Index, Pname)  </strong><UL>Args: Index, Pname<br>
+Returns: Pointer=#sdlmem{}<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetVertexAttribPointerv.html">C-API:</a> void glGetVertexAttribPointerv(GLuint index, GLenum pname,  GLvoid* *pointer)<br>
+</UL>
+<p><A NAME="isProgram">
+<strong> isProgram(Program)  </strong><UL>Args: Program<br>
+Returns: ?GL_BYTE<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glIsProgram.html">C-API:</a> GLboolean glIsProgram(GLuint program)<br>
+</UL>
+<p><A NAME="isShader">
+<strong> isShader(Shader)  </strong><UL>Args: Shader<br>
+Returns: ?GL_BYTE<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glIsShader.html">C-API:</a> GLboolean glIsShader(GLuint shader)<br>
+</UL>
+<p><A NAME="linkProgram">
+<strong> linkProgram(Program)  </strong><UL>Args: Program<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glLinkProgram.html">C-API:</a> void glLinkProgram(GLuint program)<br>
+</UL>
+<p><A NAME="shaderSource">
+<strong> shaderSource(Shader, Count, String, Length)  </strong><UL>Args: Shader, Count, <<[Length]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glShaderSource.html">C-API:</a> void glShaderSource(GLuint shader, GLsizei count,  const GLchar* *string,  const GLint * length)<br>
+</UL>
+<p><A NAME="useProgram">
+<strong> useProgram(Program)  </strong><UL>Args: Program<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glUseProgram.html">C-API:</a> void glUseProgram(GLuint program)<br>
+</UL>
+<p><A NAME="uniform1f">
+<strong> uniform1f(Location, V0)  </strong><UL>Args: Location, V0<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glUniform.html">C-API:</a> void glUniform1f(GLint location, GLfloat v0)<br>
+</UL>
+<p><A NAME="uniform2f">
+<strong> uniform2f(Location, V0, V1)  </strong><UL>Args: Location, V0, V1<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glUniform.html">C-API:</a> void glUniform2f(GLint location, GLfloat v0, GLfloat v1)<br>
+</UL>
+<p><A NAME="uniform3f">
+<strong> uniform3f(Location, V0, V1, V2)  </strong><UL>Args: Location, V0, V1, V2<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glUniform.html">C-API:</a> void glUniform3f(GLint location, GLfloat v0, GLfloat v1, GLfloat v2)<br>
+</UL>
+<p><A NAME="uniform4f">
+<strong> uniform4f(Location, V0, V1, V2, V3)  </strong><UL>Args: Location, V0, V1, V2, V3<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glUniform.html">C-API:</a> void glUniform4f(GLint location, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3)<br>
+</UL>
+<p><A NAME="uniform1i">
+<strong> uniform1i(Location, V0)  </strong><UL>Args: Location, V0<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glUniform.html">C-API:</a> void glUniform1i(GLint location, GLint v0)<br>
+</UL>
+<p><A NAME="uniform2i">
+<strong> uniform2i(Location, V0, V1)  </strong><UL>Args: Location, V0, V1<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glUniform.html">C-API:</a> void glUniform2i(GLint location, GLint v0, GLint v1)<br>
+</UL>
+<p><A NAME="uniform3i">
+<strong> uniform3i(Location, V0, V1, V2)  </strong><UL>Args: Location, V0, V1, V2<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glUniform.html">C-API:</a> void glUniform3i(GLint location, GLint v0, GLint v1, GLint v2)<br>
+</UL>
+<p><A NAME="uniform4i">
+<strong> uniform4i(Location, V0, V1, V2, V3)  </strong><UL>Args: Location, V0, V1, V2, V3<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glUniform.html">C-API:</a> void glUniform4i(GLint location, GLint v0, GLint v1, GLint v2, GLint v3)<br>
+</UL>
+<p><A NAME="uniform1fv">
+<strong> uniform1fv(Location, Count, Value)  </strong><UL>Args: Location, Count, [Value1]<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glUniform.html">C-API:</a> void glUniform1fv(GLint location, GLsizei count,  const GLfloat * value)<br>
+</UL>
+<p><A NAME="uniform2fv">
+<strong> uniform2fv(Location, Count, Value)  </strong><UL>Args: Location, Count, [{Value1,Value2}]<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glUniform.html">C-API:</a> void glUniform2fv(GLint location, GLsizei count,  const GLfloat * value)<br>
+</UL>
+<p><A NAME="uniform3fv">
+<strong> uniform3fv(Location, Count, Value)  </strong><UL>Args: Location, Count, [{Value1,Value2,Value3}]<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glUniform.html">C-API:</a> void glUniform3fv(GLint location, GLsizei count,  const GLfloat * value)<br>
+</UL>
+<p><A NAME="uniform4fv">
+<strong> uniform4fv(Location, Count, Value)  </strong><UL>Args: Location, Count, [{Value1,Value2,Value3,Value4}]<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glUniform.html">C-API:</a> void glUniform4fv(GLint location, GLsizei count,  const GLfloat * value)<br>
+</UL>
+<p><A NAME="uniform1iv">
+<strong> uniform1iv(Location, Count, Value)  </strong><UL>Args: Location, Count, [Value1]<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glUniform.html">C-API:</a> void glUniform1iv(GLint location, GLsizei count,  const GLint * value)<br>
+</UL>
+<p><A NAME="uniform2iv">
+<strong> uniform2iv(Location, Count, Value)  </strong><UL>Args: Location, Count, [{Value1,Value2}]<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glUniform.html">C-API:</a> void glUniform2iv(GLint location, GLsizei count,  const GLint * value)<br>
+</UL>
+<p><A NAME="uniform3iv">
+<strong> uniform3iv(Location, Count, Value)  </strong><UL>Args: Location, Count, [{Value1,Value2,Value3}]<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glUniform.html">C-API:</a> void glUniform3iv(GLint location, GLsizei count,  const GLint * value)<br>
+</UL>
+<p><A NAME="uniform4iv">
+<strong> uniform4iv(Location, Count, Value)  </strong><UL>Args: Location, Count, [{Value1,Value2,Value3,Value4}]<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glUniform.html">C-API:</a> void glUniform4iv(GLint location, GLsizei count,  const GLint * value)<br>
+</UL>
+<p><A NAME="uniformMatrix2fv">
+<strong> uniformMatrix2fv(Location, Count, Transpose, Value)  </strong><UL>Args: Location, Count, Transpose, [{Value1,Value2,Value3,Value4}]<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glUniformMatrix.html">C-API:</a> void glUniformMatrix2fv(GLint location, GLsizei count, GLboolean transpose,  const GLfloat * value)<br>
+</UL>
+<p><A NAME="uniformMatrix3fv">
+<strong> uniformMatrix3fv(Location, Count, Transpose, Value)  </strong><UL>Args: Location, Count, Transpose, [{Value1,Value2,Value3,Value4,Value5,Value6,Value7,Value8,Value9}]<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glUniformMatrix.html">C-API:</a> void glUniformMatrix3fv(GLint location, GLsizei count, GLboolean transpose,  const GLfloat * value)<br>
+</UL>
+<p><A NAME="uniformMatrix4fv">
+<strong> uniformMatrix4fv(Location, Count, Transpose, Value)  </strong><UL>Args: Location, Count, Transpose, [{Value1,Value2,Value3,Value4,Value5,Value6,Value7,Value8,Value9,Value10,Value11,Value12,Value13,Value14,Value15,Value16}]<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glUniformMatrix.html">C-API:</a> void glUniformMatrix4fv(GLint location, GLsizei count, GLboolean transpose,  const GLfloat * value)<br>
+</UL>
+<p><A NAME="validateProgram">
+<strong> validateProgram(Program)  </strong><UL>Args: Program<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glValidateProgram.html">C-API:</a> void glValidateProgram(GLuint program)<br>
+</UL>
+<p><A NAME="vertexAttrib1d">
+<strong> vertexAttrib1d(Index, X)  </strong><UL>Args: Index, X<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib.html">C-API:</a> void glVertexAttrib1d(GLuint index, GLdouble x)<br>
+</UL>
+<p><A NAME="vertexAttrib1dv">
+<strong> vertexAttrib1dv(Index, {V1})  </strong><UL>Args: Index, {V1}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib.html">C-API:</a> void glVertexAttrib1dv(GLuint index,  const GLdouble * v)<br>
+</UL>
+<p><A NAME="vertexAttrib1f">
+<strong> vertexAttrib1f(Index, X)  </strong><UL>Args: Index, X<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib.html">C-API:</a> void glVertexAttrib1f(GLuint index, GLfloat x)<br>
+</UL>
+<p><A NAME="vertexAttrib1fv">
+<strong> vertexAttrib1fv(Index, {V1})  </strong><UL>Args: Index, {V1}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib.html">C-API:</a> void glVertexAttrib1fv(GLuint index,  const GLfloat * v)<br>
+</UL>
+<p><A NAME="vertexAttrib1s">
+<strong> vertexAttrib1s(Index, X)  </strong><UL>Args: Index, X<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib.html">C-API:</a> void glVertexAttrib1s(GLuint index, GLshort x)<br>
+</UL>
+<p><A NAME="vertexAttrib1sv">
+<strong> vertexAttrib1sv(Index, {V1})  </strong><UL>Args: Index, {V1}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib.html">C-API:</a> void glVertexAttrib1sv(GLuint index,  const GLshort * v)<br>
+</UL>
+<p><A NAME="vertexAttrib2d">
+<strong> vertexAttrib2d(Index, X, Y)  </strong><UL>Args: Index, X, Y<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib.html">C-API:</a> void glVertexAttrib2d(GLuint index, GLdouble x, GLdouble y)<br>
+</UL>
+<p><A NAME="vertexAttrib2dv">
+<strong> vertexAttrib2dv(Index, {V1,V2})  </strong><UL>Args: Index, {V1,V2}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib.html">C-API:</a> void glVertexAttrib2dv(GLuint index,  const GLdouble * v)<br>
+</UL>
+<p><A NAME="vertexAttrib2f">
+<strong> vertexAttrib2f(Index, X, Y)  </strong><UL>Args: Index, X, Y<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib.html">C-API:</a> void glVertexAttrib2f(GLuint index, GLfloat x, GLfloat y)<br>
+</UL>
+<p><A NAME="vertexAttrib2fv">
+<strong> vertexAttrib2fv(Index, {V1,V2})  </strong><UL>Args: Index, {V1,V2}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib.html">C-API:</a> void glVertexAttrib2fv(GLuint index,  const GLfloat * v)<br>
+</UL>
+<p><A NAME="vertexAttrib2s">
+<strong> vertexAttrib2s(Index, X, Y)  </strong><UL>Args: Index, X, Y<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib.html">C-API:</a> void glVertexAttrib2s(GLuint index, GLshort x, GLshort y)<br>
+</UL>
+<p><A NAME="vertexAttrib2sv">
+<strong> vertexAttrib2sv(Index, {V1,V2})  </strong><UL>Args: Index, {V1,V2}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib.html">C-API:</a> void glVertexAttrib2sv(GLuint index,  const GLshort * v)<br>
+</UL>
+<p><A NAME="vertexAttrib3d">
+<strong> vertexAttrib3d(Index, X, Y, Z)  </strong><UL>Args: Index, X, Y, Z<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib.html">C-API:</a> void glVertexAttrib3d(GLuint index, GLdouble x, GLdouble y, GLdouble z)<br>
+</UL>
+<p><A NAME="vertexAttrib3dv">
+<strong> vertexAttrib3dv(Index, {V1,V2,V3})  </strong><UL>Args: Index, {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib.html">C-API:</a> void glVertexAttrib3dv(GLuint index,  const GLdouble * v)<br>
+</UL>
+<p><A NAME="vertexAttrib3f">
+<strong> vertexAttrib3f(Index, X, Y, Z)  </strong><UL>Args: Index, X, Y, Z<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib.html">C-API:</a> void glVertexAttrib3f(GLuint index, GLfloat x, GLfloat y, GLfloat z)<br>
+</UL>
+<p><A NAME="vertexAttrib3fv">
+<strong> vertexAttrib3fv(Index, {V1,V2,V3})  </strong><UL>Args: Index, {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib.html">C-API:</a> void glVertexAttrib3fv(GLuint index,  const GLfloat * v)<br>
+</UL>
+<p><A NAME="vertexAttrib3s">
+<strong> vertexAttrib3s(Index, X, Y, Z)  </strong><UL>Args: Index, X, Y, Z<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib.html">C-API:</a> void glVertexAttrib3s(GLuint index, GLshort x, GLshort y, GLshort z)<br>
+</UL>
+<p><A NAME="vertexAttrib3sv">
+<strong> vertexAttrib3sv(Index, {V1,V2,V3})  </strong><UL>Args: Index, {V1,V2,V3}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib.html">C-API:</a> void glVertexAttrib3sv(GLuint index,  const GLshort * v)<br>
+</UL>
+<p><A NAME="vertexAttrib4Nbv">
+<strong> vertexAttrib4Nbv(Index, V)  </strong><UL>Args: Index, <<[V]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib4N.html">C-API:</a> void glVertexAttrib4Nbv(GLuint index,  const GLbyte * v)<br>
+</UL>
+<p><A NAME="vertexAttrib4Niv">
+<strong> vertexAttrib4Niv(Index, V)  </strong><UL>Args: Index, <<[V]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib4N.html">C-API:</a> void glVertexAttrib4Niv(GLuint index,  const GLint * v)<br>
+</UL>
+<p><A NAME="vertexAttrib4Nsv">
+<strong> vertexAttrib4Nsv(Index, V)  </strong><UL>Args: Index, <<[V]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib4N.html">C-API:</a> void glVertexAttrib4Nsv(GLuint index,  const GLshort * v)<br>
+</UL>
+<p><A NAME="vertexAttrib4Nub">
+<strong> vertexAttrib4Nub(Index, X, Y, Z, W)  </strong><UL>Args: Index, X, Y, Z, W<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib4N.html">C-API:</a> void glVertexAttrib4Nub(GLuint index, GLubyte x, GLubyte y, GLubyte z, GLubyte w)<br>
+</UL>
+<p><A NAME="vertexAttrib4Nubv">
+<strong> vertexAttrib4Nubv(Index, V)  </strong><UL>Args: Index, <<[V]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib4Nu.html">C-API:</a> void glVertexAttrib4Nubv(GLuint index,  const GLubyte * v)<br>
+</UL>
+<p><A NAME="vertexAttrib4Nuiv">
+<strong> vertexAttrib4Nuiv(Index, V)  </strong><UL>Args: Index, <<[V]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib4Nu.html">C-API:</a> void glVertexAttrib4Nuiv(GLuint index,  const GLuint * v)<br>
+</UL>
+<p><A NAME="vertexAttrib4Nusv">
+<strong> vertexAttrib4Nusv(Index, V)  </strong><UL>Args: Index, <<[V]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib4Nu.html">C-API:</a> void glVertexAttrib4Nusv(GLuint index,  const GLushort * v)<br>
+</UL>
+<p><A NAME="vertexAttrib4bv">
+<strong> vertexAttrib4bv(Index, {V1,V2,V3,V4})  </strong><UL>Args: Index, {V1,V2,V3,V4}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib.html">C-API:</a> void glVertexAttrib4bv(GLuint index,  const GLbyte * v)<br>
+</UL>
+<p><A NAME="vertexAttrib4d">
+<strong> vertexAttrib4d(Index, X, Y, Z, W)  </strong><UL>Args: Index, X, Y, Z, W<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib.html">C-API:</a> void glVertexAttrib4d(GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w)<br>
+</UL>
+<p><A NAME="vertexAttrib4dv">
+<strong> vertexAttrib4dv(Index, {V1,V2,V3,V4})  </strong><UL>Args: Index, {V1,V2,V3,V4}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib.html">C-API:</a> void glVertexAttrib4dv(GLuint index,  const GLdouble * v)<br>
+</UL>
+<p><A NAME="vertexAttrib4f">
+<strong> vertexAttrib4f(Index, X, Y, Z, W)  </strong><UL>Args: Index, X, Y, Z, W<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib.html">C-API:</a> void glVertexAttrib4f(GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w)<br>
+</UL>
+<p><A NAME="vertexAttrib4fv">
+<strong> vertexAttrib4fv(Index, {V1,V2,V3,V4})  </strong><UL>Args: Index, {V1,V2,V3,V4}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib.html">C-API:</a> void glVertexAttrib4fv(GLuint index,  const GLfloat * v)<br>
+</UL>
+<p><A NAME="vertexAttrib4iv">
+<strong> vertexAttrib4iv(Index, {V1,V2,V3,V4})  </strong><UL>Args: Index, {V1,V2,V3,V4}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib.html">C-API:</a> void glVertexAttrib4iv(GLuint index,  const GLint * v)<br>
+</UL>
+<p><A NAME="vertexAttrib4s">
+<strong> vertexAttrib4s(Index, X, Y, Z, W)  </strong><UL>Args: Index, X, Y, Z, W<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib.html">C-API:</a> void glVertexAttrib4s(GLuint index, GLshort x, GLshort y, GLshort z, GLshort w)<br>
+</UL>
+<p><A NAME="vertexAttrib4sv">
+<strong> vertexAttrib4sv(Index, {V1,V2,V3,V4})  </strong><UL>Args: Index, {V1,V2,V3,V4}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib.html">C-API:</a> void glVertexAttrib4sv(GLuint index,  const GLshort * v)<br>
+</UL>
+<p><A NAME="vertexAttrib4ubv">
+<strong> vertexAttrib4ubv(Index, {V1,V2,V3,V4})  </strong><UL>Args: Index, {V1,V2,V3,V4}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib.html">C-API:</a> void glVertexAttrib4ubv(GLuint index,  const GLubyte * v)<br>
+</UL>
+<p><A NAME="vertexAttrib4uiv">
+<strong> vertexAttrib4uiv(Index, {V1,V2,V3,V4})  </strong><UL>Args: Index, {V1,V2,V3,V4}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib.html">C-API:</a> void glVertexAttrib4uiv(GLuint index,  const GLuint * v)<br>
+</UL>
+<p><A NAME="vertexAttrib4usv">
+<strong> vertexAttrib4usv(Index, {V1,V2,V3,V4})  </strong><UL>Args: Index, {V1,V2,V3,V4}<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttrib.html">C-API:</a> void glVertexAttrib4usv(GLuint index,  const GLushort * v)<br>
+</UL>
+<p><A NAME="vertexAttribPointer">
+<strong> vertexAttribPointer(Index, Size, Type, Normalized, Stride, Pointer)  </strong><UL>Args: Index, Size, Type, Normalized, Stride, <<[Pointer]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexAttribPointer.html">C-API:</a> void glVertexAttribPointer(GLuint index, GLint size, GLenum type, GLboolean normalized, GLsizei stride,  const GLvoid * pointer)<br>
+</UL>
+<p><A NAME="weightbvARB">
+<strong> weightbvARB(Size, Weights)  </strong><UL>Args: Size, <<[Weights]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glWeightbvARB.html">C-API:</a> void glWeightbvARB(GLint size,  const GLbyte * weights)<br>
+</UL>
+<p><A NAME="weightsvARB">
+<strong> weightsvARB(Size, Weights)  </strong><UL>Args: Size, <<[Weights]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glWeightsvARB.html">C-API:</a> void glWeightsvARB(GLint size,  const GLshort * weights)<br>
+</UL>
+<p><A NAME="weightivARB">
+<strong> weightivARB(Size, Weights)  </strong><UL>Args: Size, <<[Weights]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glWeightivARB.html">C-API:</a> void glWeightivARB(GLint size,  const GLint * weights)<br>
+</UL>
+<p><A NAME="weightfvARB">
+<strong> weightfvARB(Size, Weights)  </strong><UL>Args: Size, <<[Weights]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glWeightfvARB.html">C-API:</a> void glWeightfvARB(GLint size,  const GLfloat * weights)<br>
+</UL>
+<p><A NAME="weightdvARB">
+<strong> weightdvARB(Size, Weights)  </strong><UL>Args: Size, <<[Weights]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glWeightdvARB.html">C-API:</a> void glWeightdvARB(GLint size,  const GLdouble * weights)<br>
+</UL>
+<p><A NAME="weightubvARB">
+<strong> weightubvARB(Size, Weights)  </strong><UL>Args: Size, <<[Weights]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glWeightubvARB.html">C-API:</a> void glWeightubvARB(GLint size,  const GLubyte * weights)<br>
+</UL>
+<p><A NAME="weightusvARB">
+<strong> weightusvARB(Size, Weights)  </strong><UL>Args: Size, <<[Weights]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glWeightusvARB.html">C-API:</a> void glWeightusvARB(GLint size,  const GLushort * weights)<br>
+</UL>
+<p><A NAME="weightuivARB">
+<strong> weightuivARB(Size, Weights)  </strong><UL>Args: Size, <<[Weights]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glWeightuivARB.html">C-API:</a> void glWeightuivARB(GLint size,  const GLuint * weights)<br>
+</UL>
+<p><A NAME="weightPointerARB">
+<strong> weightPointerARB(Size, Type, Stride, Pointer)  </strong><UL>Args: Size, Type, Stride, <<[Pointer]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glWeightPointerARB.html">C-API:</a> void glWeightPointerARB(GLint size, GLenum type, GLsizei stride,  const GLvoid * pointer)<br>
+</UL>
+<p><A NAME="vertexBlendARB">
+<strong> vertexBlendARB(Count)  </strong><UL>Args: Count<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glVertexBlendARB.html">C-API:</a> void glVertexBlendARB(GLint count)<br>
+</UL>
+<p><A NAME="currentPaletteMatrixARB">
+<strong> currentPaletteMatrixARB(Index)  </strong><UL>Args: Index<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glCurrentPaletteMatrixARB.html">C-API:</a> void glCurrentPaletteMatrixARB(GLint index)<br>
+</UL>
+<p><A NAME="matrixIndexubvARB">
+<strong> matrixIndexubvARB(Size, Indices)  </strong><UL>Args: Size, <<[Indices]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMatrixIndexubvARB.html">C-API:</a> void glMatrixIndexubvARB(GLint size,  const GLubyte * indices)<br>
+</UL>
+<p><A NAME="matrixIndexusvARB">
+<strong> matrixIndexusvARB(Size, Indices)  </strong><UL>Args: Size, <<[Indices]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMatrixIndexusvARB.html">C-API:</a> void glMatrixIndexusvARB(GLint size,  const GLushort * indices)<br>
+</UL>
+<p><A NAME="matrixIndexuivARB">
+<strong> matrixIndexuivARB(Size, Indices)  </strong><UL>Args: Size, <<[Indices]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMatrixIndexuivARB.html">C-API:</a> void glMatrixIndexuivARB(GLint size,  const GLuint * indices)<br>
+</UL>
+<p><A NAME="matrixIndexPointerARB">
+<strong> matrixIndexPointerARB(Size, Type, Stride, Pointer)  </strong><UL>Args: Size, Type, Stride, <<[Pointer]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glMatrixIndexPointerARB.html">C-API:</a> void glMatrixIndexPointerARB(GLint size, GLenum type, GLsizei stride,  const GLvoid * pointer)<br>
+</UL>
+<p><A NAME="programStringARB">
+<strong> programStringARB(Target, Format, Len, String)  </strong><UL>Args: Target, Format, Len, <<[String]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glProgramStringARB.html">C-API:</a> void glProgramStringARB(GLenum target, GLenum format, GLsizei len,  const GLvoid * string)<br>
+</UL>
+<p><A NAME="bindProgramARB">
+<strong> bindProgramARB(Target, Program)  </strong><UL>Args: Target, Program<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glBindProgramARB.html">C-API:</a> void glBindProgramARB(GLenum target, GLuint program)<br>
+</UL>
+<p><A NAME="deleteProgramsARB">
+<strong> deleteProgramsARB(N, Programs)  </strong><UL>Args: N, <<[Programs]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glDeleteProgramsARB.html">C-API:</a> void glDeleteProgramsARB(GLsizei n,  const GLuint * programs)<br>
+</UL>
+<p><A NAME="genProgramsARB">
+<strong> genProgramsARB(N)  </strong><UL>Args: N<br>
+Returns: [Programs]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGenProgramsARB.html">C-API:</a> void glGenProgramsARB(GLsizei n, GLuint * programs)<br>
+</UL>
+<p><A NAME="programEnvParameter4dARB">
+<strong> programEnvParameter4dARB(Target, Index, X, Y, Z, W)  </strong><UL>Args: Target, Index, X, Y, Z, W<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glProgramEnvParameter4dARB.html">C-API:</a> void glProgramEnvParameter4dARB(GLenum target, GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w)<br>
+</UL>
+<p><A NAME="programEnvParameter4dvARB">
+<strong> programEnvParameter4dvARB(Target, Index, Params)  </strong><UL>Args: Target, Index, <<[Params]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glProgramEnvParameter4dvARB.html">C-API:</a> void glProgramEnvParameter4dvARB(GLenum target, GLuint index,  const GLdouble * params)<br>
+</UL>
+<p><A NAME="programEnvParameter4fARB">
+<strong> programEnvParameter4fARB(Target, Index, X, Y, Z, W)  </strong><UL>Args: Target, Index, X, Y, Z, W<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glProgramEnvParameter4fARB.html">C-API:</a> void glProgramEnvParameter4fARB(GLenum target, GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w)<br>
+</UL>
+<p><A NAME="programEnvParameter4fvARB">
+<strong> programEnvParameter4fvARB(Target, Index, Params)  </strong><UL>Args: Target, Index, <<[Params]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glProgramEnvParameter4fvARB.html">C-API:</a> void glProgramEnvParameter4fvARB(GLenum target, GLuint index,  const GLfloat * params)<br>
+</UL>
+<p><A NAME="programLocalParameter4dARB">
+<strong> programLocalParameter4dARB(Target, Index, X, Y, Z, W)  </strong><UL>Args: Target, Index, X, Y, Z, W<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glProgramLocalParameter4dARB.html">C-API:</a> void glProgramLocalParameter4dARB(GLenum target, GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w)<br>
+</UL>
+<p><A NAME="programLocalParameter4dvARB">
+<strong> programLocalParameter4dvARB(Target, Index, Params)  </strong><UL>Args: Target, Index, <<[Params]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glProgramLocalParameter4dvARB.html">C-API:</a> void glProgramLocalParameter4dvARB(GLenum target, GLuint index,  const GLdouble * params)<br>
+</UL>
+<p><A NAME="programLocalParameter4fARB">
+<strong> programLocalParameter4fARB(Target, Index, X, Y, Z, W)  </strong><UL>Args: Target, Index, X, Y, Z, W<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glProgramLocalParameter4fARB.html">C-API:</a> void glProgramLocalParameter4fARB(GLenum target, GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w)<br>
+</UL>
+<p><A NAME="programLocalParameter4fvARB">
+<strong> programLocalParameter4fvARB(Target, Index, Params)  </strong><UL>Args: Target, Index, <<[Params]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glProgramLocalParameter4fvARB.html">C-API:</a> void glProgramLocalParameter4fvARB(GLenum target, GLuint index,  const GLfloat * params)<br>
+</UL>
+<p><A NAME="getProgramEnvParameterdvARB">
+<strong> getProgramEnvParameterdvARB(Target, Index)  </strong><UL>Args: Target, Index<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetProgramEnvParameterdvARB.html">C-API:</a> void glGetProgramEnvParameterdvARB(GLenum target, GLuint index, GLdouble * params)<br>
+</UL>
+<p><A NAME="getProgramEnvParameterfvARB">
+<strong> getProgramEnvParameterfvARB(Target, Index)  </strong><UL>Args: Target, Index<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetProgramEnvParameterfvARB.html">C-API:</a> void glGetProgramEnvParameterfvARB(GLenum target, GLuint index, GLfloat * params)<br>
+</UL>
+<p><A NAME="getProgramLocalParameterdvARB">
+<strong> getProgramLocalParameterdvARB(Target, Index)  </strong><UL>Args: Target, Index<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetProgramLocalParameterdvARB.html">C-API:</a> void glGetProgramLocalParameterdvARB(GLenum target, GLuint index, GLdouble * params)<br>
+</UL>
+<p><A NAME="getProgramLocalParameterfvARB">
+<strong> getProgramLocalParameterfvARB(Target, Index)  </strong><UL>Args: Target, Index<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetProgramLocalParameterfvARB.html">C-API:</a> void glGetProgramLocalParameterfvARB(GLenum target, GLuint index, GLfloat * params)<br>
+</UL>
+<p><A NAME="getProgramStringARB">
+<strong> getProgramStringARB(Target, Pname, #sdlmem{bin=String})  </strong><UL>Args: Target, Pname, #sdlmem{} = String<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetProgramStringARB.html">C-API:</a> void glGetProgramStringARB(GLenum target, GLenum pname, GLvoid * string)<br>
+</UL>
+<p><A NAME="deleteObjectARB">
+<strong> deleteObjectARB(Obj)  </strong><UL>Args: Obj<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glDeleteObjectARB.html">C-API:</a> void glDeleteObjectARB(GLhandleARB obj)<br>
+</UL>
+<p><A NAME="getHandleARB">
+<strong> getHandleARB(Pname)  </strong><UL>Args: Pname<br>
+Returns: ?GL_UNSIGNED_INT<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetHandleARB.html">C-API:</a> GLhandleARB glGetHandleARB(GLenum pname)<br>
+</UL>
+<p><A NAME="detachObjectARB">
+<strong> detachObjectARB(ContainerObj, AttachedObj)  </strong><UL>Args: ContainerObj, AttachedObj<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glDetachObjectARB.html">C-API:</a> void glDetachObjectARB(GLhandleARB containerObj, GLhandleARB attachedObj)<br>
+</UL>
+<p><A NAME="createShaderObjectARB">
+<strong> createShaderObjectARB(ShaderType)  </strong><UL>Args: ShaderType<br>
+Returns: ?GL_UNSIGNED_INT<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glCreateShaderObjectARB.html">C-API:</a> GLhandleARB glCreateShaderObjectARB(GLenum shaderType)<br>
+</UL>
+<p><A NAME="createProgramObjectARB">
+<strong> createProgramObjectARB()  </strong><UL>Returns: ?GL_UNSIGNED_INT<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glCreateProgramObjectARB.html">C-API:</a> GLhandleARB glCreateProgramObjectARB()<br>
+</UL>
+<p><A NAME="attachObjectARB">
+<strong> attachObjectARB(ContainerObj, Obj)  </strong><UL>Args: ContainerObj, Obj<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glAttachObjectARB.html">C-API:</a> void glAttachObjectARB(GLhandleARB containerObj, GLhandleARB obj)<br>
+</UL>
+<p><A NAME="useProgramObjectARB">
+<strong> useProgramObjectARB(ProgramObj)  </strong><UL>Args: ProgramObj<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glUseProgramObjectARB.html">C-API:</a> void glUseProgramObjectARB(GLhandleARB programObj)<br>
+</UL>
+<p><A NAME="getObjectParameterfvARB">
+<strong> getObjectParameterfvARB(Obj, Pname)  </strong><UL>Args: Obj, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetObjectParameterfvARB.html">C-API:</a> void glGetObjectParameterfvARB(GLhandleARB obj, GLenum pname, GLfloat * params)<br>
+</UL>
+<p><A NAME="getObjectParameterivARB">
+<strong> getObjectParameterivARB(Obj, Pname)  </strong><UL>Args: Obj, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetObjectParameterivARB.html">C-API:</a> void glGetObjectParameterivARB(GLhandleARB obj, GLenum pname, GLint * params)<br>
+</UL>
+<p><A NAME="getInfoLogARB">
+<strong> getInfoLogARB(Obj, MaxLength)  </strong><UL>Args: Obj, MaxLength<br>
+Returns: {[Length], [InfoLog]}<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetInfoLogARB.html">C-API:</a> void glGetInfoLogARB(GLhandleARB obj, GLsizei maxLength, GLsizei * length, GLcharARB * infoLog)<br>
+</UL>
+<p><A NAME="getAttachedObjectsARB">
+<strong> getAttachedObjectsARB(ContainerObj, MaxCount)  </strong><UL>Args: ContainerObj, MaxCount<br>
+Returns: {[Count], [Obj]}<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetAttachedObjectsARB.html">C-API:</a> void glGetAttachedObjectsARB(GLhandleARB containerObj, GLsizei maxCount, GLsizei * count, GLhandleARB * obj)<br>
+</UL>
+<p><A NAME="stencilOpSeparateATI">
+<strong> stencilOpSeparateATI(Face, Sfail, Dpfail, Dppass)  </strong><UL>Args: Face, Sfail, Dpfail, Dppass<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glStencilOpSeparateATI.html">C-API:</a> void glStencilOpSeparateATI(GLenum face, GLenum sfail, GLenum dpfail, GLenum dppass)<br>
+</UL>
+<p><A NAME="stencilFuncSeparateATI">
+<strong> stencilFuncSeparateATI(Frontfunc, Backfunc, Ref, Mask)  </strong><UL>Args: Frontfunc, Backfunc, Ref, Mask<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glStencilFuncSeparateATI.html">C-API:</a> void glStencilFuncSeparateATI(GLenum frontfunc, GLenum backfunc, GLint ref, GLuint mask)<br>
+</UL>
+<p><A NAME="isRenderbufferEXT">
+<strong> isRenderbufferEXT(Renderbuffer)  </strong><UL>Args: Renderbuffer<br>
+Returns: ?GL_BYTE<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glIsRenderbufferEXT.html">C-API:</a> GLboolean glIsRenderbufferEXT(GLuint renderbuffer)<br>
+</UL>
+<p><A NAME="bindRenderbufferEXT">
+<strong> bindRenderbufferEXT(Target, Renderbuffer)  </strong><UL>Args: Target, Renderbuffer<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glBindRenderbufferEXT.html">C-API:</a> void glBindRenderbufferEXT(GLenum target, GLuint renderbuffer)<br>
+</UL>
+<p><A NAME="deleteRenderbuffersEXT">
+<strong> deleteRenderbuffersEXT(N, Renderbuffers)  </strong><UL>Args: N, <<[Renderbuffers]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glDeleteRenderbuffersEXT.html">C-API:</a> void glDeleteRenderbuffersEXT(GLsizei n,  const GLuint * renderbuffers)<br>
+</UL>
+<p><A NAME="genRenderbuffersEXT">
+<strong> genRenderbuffersEXT(N)  </strong><UL>Args: N<br>
+Returns: [Renderbuffers]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGenRenderbuffersEXT.html">C-API:</a> void glGenRenderbuffersEXT(GLsizei n, GLuint * renderbuffers)<br>
+</UL>
+<p><A NAME="renderbufferStorageEXT">
+<strong> renderbufferStorageEXT(Target, Internalformat, Width, Height)  </strong><UL>Args: Target, Internalformat, Width, Height<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glRenderbufferStorageEXT.html">C-API:</a> void glRenderbufferStorageEXT(GLenum target, GLenum internalformat, GLsizei width, GLsizei height)<br>
+</UL>
+<p><A NAME="getRenderbufferParameterivEXT">
+<strong> getRenderbufferParameterivEXT(Target, Pname)  </strong><UL>Args: Target, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetRenderbufferParameterivEXT.html">C-API:</a> void glGetRenderbufferParameterivEXT(GLenum target, GLenum pname, GLint * params)<br>
+</UL>
+<p><A NAME="isFramebufferEXT">
+<strong> isFramebufferEXT(Framebuffer)  </strong><UL>Args: Framebuffer<br>
+Returns: ?GL_BYTE<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glIsFramebufferEXT.html">C-API:</a> GLboolean glIsFramebufferEXT(GLuint framebuffer)<br>
+</UL>
+<p><A NAME="bindFramebufferEXT">
+<strong> bindFramebufferEXT(Target, Framebuffer)  </strong><UL>Args: Target, Framebuffer<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glBindFramebufferEXT.html">C-API:</a> void glBindFramebufferEXT(GLenum target, GLuint framebuffer)<br>
+</UL>
+<p><A NAME="deleteFramebuffersEXT">
+<strong> deleteFramebuffersEXT(N, Framebuffers)  </strong><UL>Args: N, <<[Framebuffers]>><br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glDeleteFramebuffersEXT.html">C-API:</a> void glDeleteFramebuffersEXT(GLsizei n,  const GLuint * framebuffers)<br>
+</UL>
+<p><A NAME="genFramebuffersEXT">
+<strong> genFramebuffersEXT(N)  </strong><UL>Args: N<br>
+Returns: [Framebuffers]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGenFramebuffersEXT.html">C-API:</a> void glGenFramebuffersEXT(GLsizei n, GLuint * framebuffers)<br>
+</UL>
+<p><A NAME="checkFramebufferStatusEXT">
+<strong> checkFramebufferStatusEXT(Target)  </strong><UL>Args: Target<br>
+Returns: ?GL_INT<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glCheckFramebufferStatusEXT.html">C-API:</a> GLenum glCheckFramebufferStatusEXT(GLenum target)<br>
+</UL>
+<p><A NAME="framebufferTexture1DEXT">
+<strong> framebufferTexture1DEXT(Target, Attachment, Textarget, Texture, Level)  </strong><UL>Args: Target, Attachment, Textarget, Texture, Level<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glFramebufferTexture1DEXT.html">C-API:</a> void glFramebufferTexture1DEXT(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level)<br>
+</UL>
+<p><A NAME="framebufferTexture2DEXT">
+<strong> framebufferTexture2DEXT(Target, Attachment, Textarget, Texture, Level)  </strong><UL>Args: Target, Attachment, Textarget, Texture, Level<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glFramebufferTexture2DEXT.html">C-API:</a> void glFramebufferTexture2DEXT(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level)<br>
+</UL>
+<p><A NAME="framebufferTexture3DEXT">
+<strong> framebufferTexture3DEXT(Target, Attachment, Textarget, Texture, Level, Zoffset)  </strong><UL>Args: Target, Attachment, Textarget, Texture, Level, Zoffset<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glFramebufferTexture3DEXT.html">C-API:</a> void glFramebufferTexture3DEXT(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level, GLint zoffset)<br>
+</UL>
+<p><A NAME="framebufferRenderbufferEXT">
+<strong> framebufferRenderbufferEXT(Target, Attachment, Renderbuffertarget, Renderbuffer)  </strong><UL>Args: Target, Attachment, Renderbuffertarget, Renderbuffer<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glFramebufferRenderbufferEXT.html">C-API:</a> void glFramebufferRenderbufferEXT(GLenum target, GLenum attachment, GLenum renderbuffertarget, GLuint renderbuffer)<br>
+</UL>
+<p><A NAME="getFramebufferAttachmentParameterivEXT">
+<strong> getFramebufferAttachmentParameterivEXT(Target, Attachment, Pname)  </strong><UL>Args: Target, Attachment, Pname<br>
+Returns: [Params]<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGetFramebufferAttachmentParameterivEXT.html">C-API:</a> void glGetFramebufferAttachmentParameterivEXT(GLenum target, GLenum attachment, GLenum pname, GLint * params)<br>
+</UL>
+<p><A NAME="generateMipmapEXT">
+<strong> generateMipmapEXT(Target)  </strong><UL>Args: Target<br>
+Returns: ok<br>
+<a href="http://www.sun.com/software/graphics/OpenGL/manpages/glGenerateMipmapEXT.html">C-API:</a> void glGenerateMipmapEXT(GLenum target)<br>
+</UL>
+</html>
