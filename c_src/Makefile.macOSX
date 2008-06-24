@@ -47,10 +47,10 @@ clean:
 ##
 
 %.o:	%.c
-	$(CC) -c $(CFLAGS) $<
+	$(CC) -c -I$(HOME)/Library/Frameworks/SDL.framework/Headers -I/Library/Frameworks/SDL.framework/Headers $(CFLAGS) $<
 
 %.o:	%.m
-	$(CC) -c -I$(HOME)/Library/Frameworks/SDL.framework/Headers $(CFLAGS) $<
+	$(CC) -c -I$(HOME)/Library/Frameworks/SDL.framework/Headers -I/Library/Frameworks/SDL.framework/Headers $(CFLAGS) $<
 
 
 #esdl_main.o :	esdl_main.c
@@ -76,22 +76,3 @@ libsdlmain.a	: SDLMain.o
 
 $(TARGETDIR)/sdl_driver.so: esdl_driver.o $(COMMON_OBJ)
 	$(CC) $< $(COMMON_OBJ) $(LDFLAGS) -bundle -flat_namespace -undefined suppress -o $@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
