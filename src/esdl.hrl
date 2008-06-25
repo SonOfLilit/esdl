@@ -20,6 +20,7 @@
 -define(SDL_AUDIO_HRL,             150).
 -define(SDL_UTIL_HRL,              180).
 -define(SDL_OPENGL_HRL,            200).
+-define(SDL_GFX_H,                 500).
 -define(SDL_OPENGLU_HRL,           600).
 -define(SDL_OPENGL_EXTS_HRL,       700).   %/* Must be last */
 -define(SDL_MAX_FUNCTIONS_HRL,    1023).   %/* Current Max.. Increase if needed */

@@ -99,6 +99,7 @@ void init_glexts(sdl_data*);
 #define AUDIO_H             150
 #define SDL_UTIL_H          180
 #define OPENGL_H            200
+#define SDL_GFX_H           500
 #define OPENGLU_H           600
 #define OPENGL_EXTS_H       700  /* Must be last */
 #define MAX_FUNCTIONS_H    1023  /* Current Max.. Increase if needed */
@@ -111,6 +112,7 @@ void init_glexts(sdl_data*);
 #include "esdl_events.h"
 #include "esdl_audio.h"
 #include "esdl_util.h"
+#include "esdl_gfx.h"
 
 void es_init(sdl_data *sd, int len, char * buff);
 void es_quit(sdl_data *sd, int len, char * buff);

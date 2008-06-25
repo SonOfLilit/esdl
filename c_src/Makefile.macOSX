@@ -28,7 +28,7 @@ ERLINC = -I$(ERL_DIR)/usr/include
 
 COMMON	=	esdl_wrapper esdl_gen esdl_spec esdl_util \
 		esdl_video esdl_events esdl_audio \
-		esdl_gl esdl_glu esdl_glext
+		esdl_gl esdl_glu esdl_glext esdl_gfx
 
 COMMON_OBJ	= $(COMMON:%=%.o)
 

@@ -33,6 +33,8 @@ static sdl_code_fn code_fns[] = {
 
 #include "esdl_sdl_fp.h"
 
+#include "esdl_sdl_gfx_fp.h"
+
 #include "esdl_gl_fp.h"
 
 #include "esdl_glu_fp.h"
