@@ -17,7 +17,9 @@ SDLINC = -I$(HOME)/Library/Frameworks/SDL.framework/Headers -I/Library/Framework
 
 CFLAGS	= -g -O2 -Wall -D_THREAD_SAFE -D_OSX_COCOA -F$(HOME)/Library/Frameworks $(ERLINC) $(SDLINC)
 
-LDFLAGS = -F$(HOME)/Library/Frameworks -framework OpenGL -framework SDL -framework OpenGL -framework AGL -framework IOKit -framework Cocoa -L. -lsdlmain
+LDFLAGS = -F$(HOME)/Library/Frameworks -framework OpenGL -framework SDL -framework OpenGL -framework AGL -framework IOKit -framework Cocoa -L. -lSDLmain -lSDL_gfx
+
+SUPPRESS_UNDEF=-Wl,-U,_driver_alloc_binary -Wl,-U,_driver_binary_inc_refc -Wl,-U,_driver_free_binary -Wl,-U,_set_port_control_flags
 
 TARGETDIR = ../priv
 
@@ -37,7 +39,7 @@ COMMON_OBJ	= $(COMMON:%=%.o)
 # Targets
 
 #target: libsdlmain.a $(TARGETDIR)/sdlwrapper $(TARGETDIR)/sdl_driver.so
-target:  $(TARGETDIR)/sdl_driver.so
+target:  libsdlmain.a $(TARGETDIR)/sdl_driver.so
 
 
 clean:  
@@ -77,4 +79,4 @@ libsdlmain.a	: SDLMain.o
 ## sdl_driver.so
 
 $(TARGETDIR)/sdl_driver.so: esdl_driver.o $(COMMON_OBJ)
-	$(CC) $< $(COMMON_OBJ) $(LDFLAGS) -bundle -flat_namespace -undefined suppress -o $@
+	$(CC) $< $(COMMON_OBJ) $(LDFLAGS) $(SUPPRESS_UNDEF) -flat_namespace -bundle -o $@ 

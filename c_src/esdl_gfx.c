@@ -56,11 +56,56 @@ void es_boxRGBA(sdl_data *sd, int len, char *bp) {
 }
 
 void es_lineColor(sdl_data *sd, int len, char *bp) {
-  error();
+   char *start;  
+   int sendlen;
+   char res;
+   SDL_Surface *sptr;
+   Uint16 x1, y1, x2, y2;
+   Uint32 color;
+
+   POPGLPTR(sptr, bp);
+   
+   x1 = get16be(bp);
+   y1 = get16be(bp);
+   x2 = get16be(bp);
+   y2 = get16be(bp);
+
+   color = get32be(bp);
+
+   res = lineColor(sptr, x1, y1, x2, y2, color);
+   
+   bp = start = sdl_get_temp_buff(sd, 1);
+   put8(bp, res);
+   sendlen = bp - start;
+   sdl_send(sd, sendlen);
 }
 
 void es_lineRGBA(sdl_data *sd, int len, char *bp) {
-  error();
+   char *start;  
+   int sendlen;
+   char res;
+   SDL_Surface *sptr;
+   Uint16 x1, y1, x2, y2;
+   Uint8 r, g, b, a;
+
+   POPGLPTR(sptr, bp);
+   
+   x1 = get16be(bp);
+   y1 = get16be(bp);
+   x2 = get16be(bp);
+   y2 = get16be(bp);
+
+   r = get8(bp);
+   g = get8(bp);
+   b = get8(bp);
+   a = get8(bp);
+
+   res = lineRGBA(sptr, x1, y1, x2, y2, r, g, b, a);
+   
+   bp = start = sdl_get_temp_buff(sd, 1);
+   put8(bp, res);
+   sendlen = bp - start;
+   sdl_send(sd, sendlen);
 }
 
 void es_aalineColor(sdl_data *sd, int len, char *bp) {

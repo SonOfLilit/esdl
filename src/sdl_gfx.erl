@@ -16,6 +16,8 @@
 
 -include("sdl_gfx.hrl").
 -include("sdl_gfx_funcs.hrl").
+-include("sdl_video.hrl").
+-include("sdl_util.hrl").
 
 -export([
 	 pixelColor/0,
@@ -28,8 +30,8 @@
 	 rectangleRGBA/0,
 	 boxColor/0,
 	 boxRGBA/0,
-	 lineColor/0,
-	 lineRGBA/0,
+	 lineColor/6,
+	 lineRGBA/9,
 	 aalineColor/0,
 	 aalineRGBA/0,
 	 circleColor/0,
@@ -159,20 +161,27 @@ boxRGBA() ->
     not_implemented.
 
 %% Func: lineColor
-%% Args: 
+%% Args: SurfaceRef, X1, Y1, X2, Y2, Color
 %% Returns: 
-%% C-API func: 
-%% Desc: 
-lineColor() ->
-    not_implemented.
+%% C-API func: int aalineColor(SDL_Surface * dst, Sint16 x1, Sint16 y1, Sint16 x2, Sint16 y2, Uint32 color)
+%% Desc: Draws a line
+lineColor(S, X1, Y1, X2, Y2, Color)
+  when record(S, sdl_surface) ->
+    lineColor(S#sdl_surface.self, X1, Y1, X2, Y2, Color);
+lineColor({surfacep, SRef}, X1, Y1, X2, Y2, Color) ->
+    call(?SDL_LineColor, <<SRef:?_PTR, X1:16, Y1:16, X2:16, Y2:16, Color:32>>).
 
 %% Func: lineRGBA
-%% Args: 
+%% Args: SurfaceRef, X1, Y1, X2, Y2, Color, R, G, B, A
 %% Returns: 
-%% C-API func: 
-%% Desc: 
-lineRGBA() ->
-    not_implemented.
+%% C-API func: aalineRGBA(SDL_Surface * dst, Sint16 x1, Sint16 y1,
+%%                        Sint16 x2, Sint16 y2, Uint8 r, Uint8 g, Uint8 b, Uint8 a);
+%% Desc: Draws a line
+lineRGBA(S, X1, Y1, X2, Y2, R, G, B, A)
+  when record(S, sdl_surface) ->
+    lineRGBA(S#sdl_surface.self, X1, Y1, X2, Y2, R, G, B, A);
+lineRGBA({surfacep, SRef}, X1, Y1, X2, Y2, R, G, B, A) ->
+    call(?SDL_LineRGBA, <<SRef:?_PTR, X1:16, Y1:16, X2:16, Y2:16, R:8, G:8, B:8, A:8>>).
 
 %% Func: aalineColor
 %% Args: 

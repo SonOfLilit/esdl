@@ -21,7 +21,7 @@ else
   GL_LIBS		= -L$(OGLDIR)/lib -lGL -lGLU 
   GL_INCS		= -I$(OGLDIR)/include/$(GL_INCLUDE_DIR)
 
-  SDL_LIBS		= $(shell sdl-config --libs)
+  SDL_LIBS		= $(shell sdl-config --libs) -lSDL_gfx
   SDL_INCS		= $(shell sdl-config --cflags)
 
   LIBS			= $(GL_LIBS) $(SDL_LIBS) -lm 
