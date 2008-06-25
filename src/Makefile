@@ -13,7 +13,7 @@ ERL_FLAGS = -I$(ERLINC) +inline +warn_unused_vars
 ErlMods		= \
 		sdl sdl_video sdl_events \
 		sdl_mouse sdl_joystick sdl_keyboard sdl_active sdl_audio \
-		gl glu sdl_util
+		gl glu sdl_util sdl_gfx
 
 ErlSrc		= $(ErlMods:%=%.erl)
 ErlTargets	= $(ErlMods:%=$(EBIN)/%.beam)

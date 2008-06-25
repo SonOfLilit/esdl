@@ -13,7 +13,7 @@
 #include <stdlib.h>
 #include "esdl.h"
 
-#include <SDL_gfxPrimitives.h>
+#include <SDL/SDL_gfxPrimitives.h>
 
 void es_pixelColor(sdl_data *sd, int len, char *bp) {
   error();
@@ -226,28 +226,3 @@ void es_stringRGBA(sdl_data *sd, int len, char *bp) {
 void es_gfxPrimitivesSetFont(sdl_data *sd, int len, char *bp) {
   error();
 }
-
-
-void es_setVideoMode(sdl_data *sd, int len, char* bp) 
-{
-    char* start;
-    int sendlen;
-  
-    w    = get16be(bp);
-    h    = get16be(bp);
-    bpp  = get16be(bp);
-    type = get32be(bp);
-
-    screen = SDL_SetVideoMode(w, h, bpp, type);
-
-    if ((type & SDL_OPENGL) == SDL_OPENGL) {
-      init_glexts(sd);
-    }
-    
-    bp = start = sdl_get_temp_buff(sd, 8);
-    PUSHGLPTR(screen, bp);
-    
-    sendlen = bp - start;
-    sdl_send(sd, sendlen);
-}
-

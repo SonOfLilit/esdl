@@ -8,7 +8,7 @@ SDL_HlineRGBAFunc
 es_hlineRGBA
 SDL_VlineColorFunc
 es_vlineColor
-VlineRGBAFunc
+SDL_VlineRGBAFunc
 es_vlineRGBA
 SDL_RectangleColorFunc
 es_rectangleColor

@@ -17,13 +17,13 @@ extern "C" {
 void es_pixelColor(sdl_data *, int, char *);
 #define SDL_PixelRGBAFunc    SDL_PixelColorFunc + 1
 void es_pixelRGBA(sdl_data *, int, char *);
-#define SDL_HlineColorFunc    PixelRGBA + 1
+#define SDL_HlineColorFunc    SDL_PixelRGBAFunc + 1
 void es_hlineColor(sdl_data *, int, char *);
-#define SDL_HlineRGBAFunc    HlineColor + 1
+#define SDL_HlineRGBAFunc    SDL_HlineColorFunc + 1
 void es_hlineRGBA(sdl_data *, int, char *);
-#define SDL_VlineColorFunc    HlineRGBA + 1
+#define SDL_VlineColorFunc    SDL_HlineRGBAFunc + 1
 void es_vlineColor(sdl_data *, int, char *);
-#define VlineRGBAFunc    SDL_VlineColorFunc + 1
+#define SDL_VlineRGBAFunc    SDL_VlineColorFunc + 1
 void es_vlineRGBA(sdl_data *, int, char *);
 #define SDL_RectangleColorFunc    SDL_VlineRGBAFunc + 1
 void es_rectangleColor(sdl_data *, int, char *);

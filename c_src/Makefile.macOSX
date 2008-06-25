@@ -13,7 +13,9 @@
 
 CC = cc
 
-CFLAGS	= -g -O2 -Wall -D_THREAD_SAFE -D_OSX_COCOA -F$(HOME)/Library/Frameworks $(ERLINC)
+SDLINC = -I$(HOME)/Library/Frameworks/SDL.framework/Headers -I/Library/Frameworks/SDL.framework/Headers
+
+CFLAGS	= -g -O2 -Wall -D_THREAD_SAFE -D_OSX_COCOA -F$(HOME)/Library/Frameworks $(ERLINC) $(SDLINC)
 
 LDFLAGS = -F$(HOME)/Library/Frameworks -framework OpenGL -framework SDL -framework OpenGL -framework AGL -framework IOKit -framework Cocoa -L. -lsdlmain
 
@@ -47,10 +49,10 @@ clean:
 ##
 
 %.o:	%.c
-	$(CC) -c -I$(HOME)/Library/Frameworks/SDL.framework/Headers -I/Library/Frameworks/SDL.framework/Headers $(CFLAGS) $<
+	$(CC) -c $(CFLAGS) $<
 
 %.o:	%.m
-	$(CC) -c -I$(HOME)/Library/Frameworks/SDL.framework/Headers -I/Library/Frameworks/SDL.framework/Headers $(CFLAGS) $<
+	$(CC) -c $(CFLAGS) $<
 
 
 #esdl_main.o :	esdl_main.c
