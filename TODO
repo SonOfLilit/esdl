@@ -1,0 +1,1 @@
+ - Fix red bug in sdl_gfx:lineColor (red channel is ignored, always 0)
