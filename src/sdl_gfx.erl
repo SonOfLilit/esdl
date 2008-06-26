@@ -30,6 +30,8 @@
 	 rectangleRGBA/0,
 	 boxColor/0,
 	 boxRGBA/0,
+	 line/6,
+	 line/9,
 	 lineColor/6,
 	 lineRGBA/9,
 	 aalineColor/0,
@@ -160,10 +162,20 @@ boxColor() ->
 boxRGBA() ->
     not_implemented.
 
+%% Func: line
+%% Args: SurfaceRef, X1, Y1, X2, Y2, (Color | R, G, B, A)
+%% Returns: 
+%% C-API func:
+%% Desc: Draws a line
+line(S, X1, Y1, X2, Y2, Color) ->
+    lineColor(S, X1, Y1, X2, Y2, Color).
+line(S, X1, Y1, X2, Y2, R, G, B, A) ->
+    lineRGBA(S, X1, Y1, X2, Y2, R, G, B, A).
+
 %% Func: lineColor
 %% Args: SurfaceRef, X1, Y1, X2, Y2, Color
 %% Returns: 
-%% C-API func: int aalineColor(SDL_Surface * dst, Sint16 x1, Sint16 y1, Sint16 x2, Sint16 y2, Uint32 color)
+%% C-API func: int lineColor(SDL_Surface * dst, Sint16 x1, Sint16 y1, Sint16 x2, Sint16 y2, Uint32 color)
 %% Desc: Draws a line
 lineColor(S, X1, Y1, X2, Y2, Color)
   when record(S, sdl_surface) ->
@@ -174,7 +186,7 @@ lineColor({surfacep, SRef}, X1, Y1, X2, Y2, Color) ->
 %% Func: lineRGBA
 %% Args: SurfaceRef, X1, Y1, X2, Y2, Color, R, G, B, A
 %% Returns: 
-%% C-API func: aalineRGBA(SDL_Surface * dst, Sint16 x1, Sint16 y1,
+%% C-API func: lineRGBA(SDL_Surface * dst, Sint16 x1, Sint16 y1,
 %%                        Sint16 x2, Sint16 y2, Uint8 r, Uint8 g, Uint8 b, Uint8 a);
 %% Desc: Draws a line
 lineRGBA(S, X1, Y1, X2, Y2, R, G, B, A)
